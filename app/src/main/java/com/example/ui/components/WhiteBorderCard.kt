@@ -16,43 +16,45 @@ import androidx.compose.ui.unit.dp
 fun WhiteBorderCard(
     modifier: Modifier = Modifier,
     onClick: (() -> Unit)? = null,
-    borderColor: Color = MaterialTheme.colorScheme.outline,
-    borderWidth: Dp = 2.dp,
-    containerColor: Color = MaterialTheme.colorScheme.surface,
-    isGlassMode: Boolean = false,
+    borderColor: Color = Color.White.copy(alpha = 0.8f),
+    borderWidth: Dp = 1.5.dp,
+    containerColor: Color = Color.White.copy(alpha = 0.22f),
+    isGlassMode: Boolean = true,
     content: @Composable ColumnScope.() -> Unit
 ) {
+    // Frosted Glass (حالت مات شیشه‌ای) Effect
     val finalContainerColor = if (isGlassMode) {
-        Color.White.copy(alpha = 0.28f)
+        if (containerColor == MaterialTheme.colorScheme.surface) Color.White.copy(alpha = 0.22f) else containerColor
     } else {
         containerColor
     }
 
     val finalBorderColor = if (isGlassMode) {
-        Color.White.copy(alpha = 0.85f)
+        if (borderColor == MaterialTheme.colorScheme.outline) Color.White.copy(alpha = 0.8f) else borderColor
     } else {
         borderColor
     }
 
-    val finalBorderWidth = if (isGlassMode) 2.dp else borderWidth
+    val finalBorderWidth = if (isGlassMode) 1.5.dp else borderWidth
+    val shape = RoundedCornerShape(20.dp)
 
     if (onClick != null) {
         Card(
             onClick = onClick,
             modifier = modifier,
-            shape = RoundedCornerShape(18.dp),
+            shape = shape,
             colors = CardDefaults.cardColors(containerColor = finalContainerColor),
             border = BorderStroke(finalBorderWidth, finalBorderColor),
-            elevation = CardDefaults.cardElevation(defaultElevation = if (isGlassMode) 1.dp else 4.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
             content = content
         )
     } else {
         Card(
             modifier = modifier,
-            shape = RoundedCornerShape(18.dp),
+            shape = shape,
             colors = CardDefaults.cardColors(containerColor = finalContainerColor),
             border = BorderStroke(finalBorderWidth, finalBorderColor),
-            elevation = CardDefaults.cardElevation(defaultElevation = if (isGlassMode) 1.dp else 4.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
             content = content
         )
     }

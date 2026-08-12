@@ -103,6 +103,1380 @@ object InitialData {
             category = "JOKE",
             readTimeMinutes = 1
         ),
+        StoryItem(
+            title = "رکابی!",
+            content = "یه لباس آستین حلقه‌ای ورزشی به دوستش چی میگه؟\nمیگه: رکابی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خونه نوساز",
+            content = "اگه گفتی تو چه خانه‌ای نمیشه ساز زد؟\nخونه نوساز!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پلاگین تلویزیون",
+            content = "می‌دونی تلویزیونا وقتی با هم کار شخصی دارن چی می‌گن؟\nمیگن: بیا تی وی (TV) باهات کار دارم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دست زدن به بتن",
+            content = "می‌دونی اگه به بتن دست بزنی چی میگه؟\nمیگه نتن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ریاضیدانان در دستشویی",
+            content = "می‌دونی ریاضی‌دان‌ها وقتی میرن دستشویی چیکار میکنن؟\nππ (پی پی) میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دینی که نیامده",
+            content = "می‌دونی به دینی که هنوز نیومده چی میگن؟\nبتادین!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تیکه نون بربری",
+            content = "می‌دونی نون بربری‌ها بخوان به یکی تیکه بندازن چی میگن؟\nمیگن: جوون لواشووو!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای نوشابه و دوغ",
+            content = "نوشابه با دوغ دعواش میشه، میگه:\nبرو تا نزدم پونه‌تو پاره کنم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "فرزند سروش صحت",
+            content = "سروش صحت بچه‌دار بشه می‌دونی چطوری اعلام میکنه؟\nاستوری میذاره: سروش منتشر کرد...",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مانی حقیقی در دنیای مجازی",
+            content = "مانی حقیقی اگه یه روز بیاد تو دنیای مجازی چی میشه؟\nمیشه ارز دیجیتال!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دوربین و نامزدش",
+            content = "دوربینه به نامزدش میگه چرا بهم نزدیک نمیشی؟\nنامزدش میگه: میخوام نزدیک شم، اما زوم نمیشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خواهر رزمی‌کار",
+            content = "می‌دونی به کسی که خواهرش رزمی‌کاره چی میگن؟\nخوارزمی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ازدواج در مریوان",
+            content = "می‌دونی تو کدام شهر فقط میشه یک بار ازدواج کرد؟\nمریوان (Marry one)!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "زندگی در قوچان",
+            content = "می‌دونی چرا زندگی تو قوچان خیلی سخته؟\nچون همه‌ش باید حواست به گرگان باشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شیطان و سیب",
+            content = "می‌دونی چرا شیطون سیب رو خودش نخورد داد حوا بخوره؟\nچون خودش رجیم (رژیم) بود!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ازدواج ماهی‌ها",
+            content = "می‌دونی چرا ماهی‌ها با هم ازدواج نمیکنن؟\nچون پولکین!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پو‌ل محله‌های تهران",
+            content = "می‌دونی محله‌های تهران پولشونو جمع کنن کجا میریزن نگه می‌دارن؟\nتو قلهک!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "آتش‌سوزی شیرینی‌فروشی",
+            content = "می‌دونی اگه شیرینی‌فروشی آتیش بگیره چی میشه؟\nتر و خشک با هم میسوزن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "عرفان پایدار و انرژی‌زا",
+            content = "می‌دونی اگه به عرفان پایدار انرژی‌زا بدی چی میشه؟\nمیشه ناپایدار!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بالاتر از فراموشی",
+            content = "می‌دونی بالاتر از فراموشی چیه؟\nفراگربه‌ای!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بی‌صبری مارها",
+            content = "می‌دونی مارها چرا صبور نیستن؟\nچون نمیتونن دست روی دست بگذارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "هوای هم رو داشتن موج‌ها",
+            content = "می‌دونی موج‌ها چطوری هوای هم رو دارن؟\nبا موج مکزیکی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "موریانه در رستوران",
+            content = "موریانه میره رستوران براش غذا نمیارن ولی سیر میاد بیرون! چرا؟\nچون چوب سادگیشو خورده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پشت تن ماهی",
+            content = "می‌دونی به پشت تن ماهی چی میگن؟\nمیگن تنبک!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مادر سه قلوها",
+            content = "می‌دونی به خانمی که سه قلو داشته باشه چی میگن؟\nمیگن خانم حمل بر خود سه تایی کرده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دو تا «ج»",
+            content = "می‌دونی به چیزی که دو تا «ج» داشته باشه چی میگن؟\nدوجداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خلاف ماشین‌ها",
+            content = "می‌دونی اگه ماشین‌ها خیلی خلاف کنن چی میشن؟\nفراری میشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای سیب‌زمینی‌ها",
+            content = "می‌دونی سیب‌زمینی‌ها با هم دعواشون بشه چیکار میکنن؟\nمیزنن همو پوره میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پرو شدن انگشت کوچک",
+            content = "انگشت کوچیکه مست میکنه، پرو میشه میگه:\nوااای چقدر شستم من!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چوپان و چمن مصنوعی",
+            content = "چوپونه با گوسفنداش دعواش میشه، میبردشون چمن مصنوعی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "صدا زدن فسنجون",
+            content = "می‌دونی وقتی فسنجون رو صدا میزنی چی میگه بهت؟\nمیگه: جون فسن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای خرماها",
+            content = "می‌دونی وقتی خرماها با هم دعواشون میشه چیکار میکنن؟\nمیزنن نخل همو درمیارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ورزش مورد علاقه فلش‌ها",
+            content = "می‌دونی ورزش مورد علاقه فلش‌ها (کارت حافظه) چیه؟\nگیگ بوکسینگ!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دید کلیه‌ها",
+            content = "می‌دونی چرا کلیه‌ها به جزئیات توجه نمیکنن؟\nچون دیدشون کلیه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تعریف کمونیست",
+            content = "می‌دونی کمونیست به چه کسایی میگن؟\nدسته‌ای از مادران که وجود مو در غذا را انکار می‌کنند!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نویسندگی گوجه فرنگی",
+            content = "می‌دونی گوجه فرنگی چرا کتاب نوشت؟\nچون میخواست کچاپ (کتاب چاپ) بشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خواب رفتن شبانه",
+            content = "اگه بخوای شبا خوابت ببره باید چیکار کنی؟\nباید بیدارت ببازه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "انبه نرسیده",
+            content = "می‌دونی به انبه نرسیده چی میگن؟\nمیگن: رسیدی زنگ بزن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مهاجرت غیرسیدها",
+            content = "می‌دونی اونایی که سید نیستن به کجا مهاجرت میکنن؟\nسیدنی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تشویق چایی‌ها",
+            content = "چایی‌ها چطوری همدیگه رو تشویق میکنن؟\nمیگن: ماسالا، ماسالا، ماسالا...",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "برفک یخچال",
+            content = "می‌دونی چرا یخچال برفک میزنه؟\nچون آنتن نداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چاشنی جمله‌ها",
+            content = "می‌دونی جمله‌ها به غذاشون چی میزنن تا خوشمزه بشه؟\nفعل فعل (فلفل)!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مخلوط ماکارونی‌ها",
+            content = "می‌دونی اگه ماکارونی‌ها قاطی پاطی بخورن چی میشه؟\nنودل میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کتری‌های سرباز",
+            content = "می‌دونی کتری‌های سرباز وقتی فرمانده‌شون صداشون میکنه چی میگن؟\nمیگن: بله به جوشم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کادوی میوه‌ها",
+            content = "می‌دونی میوه‌ها موقع تولد به همدیگه چی کادو میدن؟\nآواکادو!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای ماهی‌ها",
+            content = "می‌دونی ماهی‌ها وقتی با هم دعواشون میشه کجا میرن؟\nمیرن جاجرود!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کامیون‌داران",
+            content = "می‌دونی کامیون‌دارا همدیگه رو میبینن چی میگن؟\nمیگن: یه بارنامه بزار دور هم جمع شیم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سوسیس روی آتش",
+            content = "می‌دونی اگه سوسیس رو بذاری رو آتیش چی میشه؟\nمی‌سوسه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غذای سیاره‌ها",
+            content = "می‌دونی غذای مورد علاقه سیاره‌ها چیه؟\nپلوتن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خلاف افراد چاق",
+            content = "می‌دونی اگه آدمای چاق خلاف کنن میبرنشون کجا؟\nپیش پلیس فتا!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "اجداد گربه‌ها",
+            content = "می‌دونی گربه‌ها به اجدادشون چی میگن؟\nپیشینیان!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مردن حیوان‌های نادر",
+            content = "می‌دونی اگه حیوون‌های نادر بمیرن چی میشه؟\nنادر ناراحت میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تصادف دو پیراهن",
+            content = "می‌دونی اگه دو تا پیراهن با هم تصادف کنن چی میشه؟\nاتو میاد چروکی (کروکی) میکشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "فضای چیتی لوبیاها",
+            content = "می‌دونی اگه لوبیاها گل بکشن کجا میرن؟\nمیرن تو فضای چیتی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شهری با دو خداحافظی",
+            content = "اگه گفتی کدوم شهره که دو بار خداحافظی میکنه؟\nدوبای!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سواد پنگوئن‌ها",
+            content = "می‌دونی چرا پنگوئن‌ها سواد ندارن؟\nچون منطقه‌شون همه‌ش برف میاد، مدارسشون تعطیله!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نون تست و تشریحی",
+            content = "می‌دونی اگه نون تست نتونی بخوری باید چیکار کنی؟\nباید نون تشریحی بخوری!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شستن خیار در سوپرمارکت",
+            content = "یه مرده میره سوپرمارکت میگه: آقا خیارشور دارید؟\nطرف میگه: بله.\nمیگه: بی‌زحمت این خیارهای ما رو هم بشورین پس!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "عصبانیت دندانپزشکان",
+            content = "می‌دونی دندون‌پزشکا وقتی بحث میکنن و عصبانی میشن چیکار میکنن؟\nمیرن تو بالکن یه نخ دندون میکشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ذخیره اطلاعات اعضای بدن",
+            content = "می‌دونی اعضای بدن اطلاعاتشون رو کجا ذخیره می‌کنن؟\nدیسک کمر!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "علاقه دو اسلحه",
+            content = "می‌دونی دو تا اسلحه از هم خوششون بیاد چی میشه؟\nرو هم کلاش میزنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شیفت کاری کیبورد",
+            content = "می‌دونی چرا کیبوردها دائماً کار می‌کنن؟\nچون دو تا شیفت دارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تخم‌گذاری مرغ صنعتی",
+            content = "به مرغه میگن می‌تونی روزی ۵۰ تا تخم بذاری؟\nمیگه: این کارای سخت رو فقط مرغای صنعتی تلاونگ انجام میدن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ماهی کارمند بانک",
+            content = "می‌دونی به ماهی‌هایی که کارمند بانک هستن چی میگن؟\nمیگن فیش بانکی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "آب خوردن ماهواره",
+            content = "می‌دونی اگه ماهواره‌ها زیاد آب بخورن چی میشن؟\nدیش‌شون میگیره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خواهر ماهی‌ها",
+            content = "می‌دونی ماهی‌ها خواهرشون رو چی صدا می‌کنن؟\nآبزی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تعجب فلش مموری",
+            content = "می‌دونی فلش‌ها وقتی تعجب می‌کنن چی میگن؟\nمیگن حجمام!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غذا خوردن ماهی‌ها",
+            content = "می‌دونی ماهی‌ها می‌خوان غذا بخورن چی می‌اندازن رو زمین؟\nسفره ماهی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چشیدن سه طعم",
+            content = "می‌دونی به کسی که سه تا طعم چشیده و دیده چی می‌گن؟\nمیگن ستم‌دیده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دپرس شدن خودکار",
+            content = "می‌دونی خودکارها وقتی دپرس بشن میرن پیش کی؟\nمیرن پیش روان‌نویس!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غول در مشهد",
+            content = "می‌دونی اگه یه غول بره مشهد چی میشه؟\nمشغول!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سفارش غذای فلش",
+            content = "می‌دونی فلش‌ها برن رستوران چی غذا سفارش میدن؟\nشیش گیگ!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "باز کردن در حمام",
+            content = "می‌دونی اگه در حمام رو باز کنی بخارها بره بیرون چی میشه؟\nسمرقند میاد تو!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غذا پریدن در گلوی زن فاضل",
+            content = "اگه زن فاضل غذا بپره گلوی شوهرش چی میگه؟\nمیگه فاضلاب، فاضلاب، فاضلااااااااب!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "قانون نیوتون",
+            content = "می‌دونی اگه نیوتون رو برعکس کنی چی میشه؟\nسیب به جای زمین به آسمون میره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دروازه‌بان زنبورها",
+            content = "می‌دونی چرا زنبورها همه‌ش گل میخورن؟\nچون دروازه‌بان‌شون ضعیفه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ایستادن قلب",
+            content = "اگه کسی قلبش ایستاد چیکار باید بکنیم؟\nواسطه‌ش صندلی می‌ذاریم بشینه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کچلی تخم‌مرغ‌ها",
+            content = "می‌دونی چرا تخم‌مرغ‌ها مو ندارن؟\nچون همه‌شون از یه شونه استفاده می‌کنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بی‌تفاوتی آسفالت",
+            content = "می‌دونی اگه آسفالت یه چیزی براش مهم نباشه چی میگه؟\nمیگه به قیرم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ماهی وکالت‌خوانده",
+            content = "می‌دونی به ماهی که وکالت میخونه چی میگن؟\nفیش حقوقی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "در کوچک به عربی",
+            content = "می‌دونی عرب‌ها به درِ کوچک چی میگن؟\nبابک!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "لپ‌تاپ روباه‌ها",
+            content = "می‌دونی چرا روباه‌ها فقط لپ‌تاپ اپل میخرن؟\nچون مک‌کارن (Maccaar)!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "افتادن آدم طاس",
+            content = "می‌دونی اگه یه آدم طاس از پله‌ها بیفته چی میشه؟\nجفت شیش میاره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تردید پتوها",
+            content = "می‌دونی وقتی پتوها مردد میشن چیکار میکنن؟\nاز لحاف میپرسن: تو شک داری؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ارتباط دو راز",
+            content = "می‌دونی دو تا راز بخوان با هم رابطه برقرار کنن بهم چی میگن؟\nمیگن فاش می‌شم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پارتی گیاه‌خواران",
+            content = "می‌دونی گیاه‌خوارا تو پارتی چی پلی می‌کنن؟\nویگن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "حل نشدن مشکل",
+            content = "می‌دونستی اگه مشکلت حل نشه چی میشه؟\nقطعاً ته نشین میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خوشحالی سیگارها",
+            content = "می‌دونی سیگارها وقتی خوشحال بشن چی میشه؟\nتو توتون‌شون عروسی میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پشت در ماندن قطارها",
+            content = "می‌دونی وقتی قطارها میرن مهمونی پشت در میمونن چی میگن؟\nمیگن: درو وا کن (واگن)!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "هنگ کردن ماهی‌ها",
+            content = "ماهی‌ها وقتی هنگ می‌کنن پیش کی میرن؟\nپیش نهنگ!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پیام بعد از ۱۲ شب",
+            content = "اومدم به دوستم ساعت ۱۲ شب پیام PM بدم، چون نیمه‌شب گذشته بود بهش AM دادم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ورود بی‌هوا",
+            content = "یارو بی‌هوا میره تو اتاق، خفه میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "قهر هیتلر",
+            content = "می‌دونستی وقتی هیتلر قهر میکرده، ژنرال‌هاش بهش چی میگفتن؟\nمیگفتن: نازی ناز نکن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خداحافظی کاکتوس‌ها",
+            content = "می‌دونی کاکتوس‌ها وقت خداحافظی به هم چی میگن؟\nمیگن داداش اگر خار داشتی زنگ بزن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نادرشاه و همسرش",
+            content = "نادرشاه هر وقت زنشو میدید می‌دونی چی میگفت؟\nمیگفت: کلوچه نادری کی بودی تو؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شورِ خیارشور",
+            content = "می‌دونی خیارشورها اگه شورشو دربیارن چی میشه؟\nخیار میشن دیگه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "اکس سبزه",
+            content = "به کسی که پوستش سبزه‌ست می‌دونی چی میگن؟\nمیگن تی‌رکس!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ملوان زبل در آفریقا",
+            content = "می‌دونی ملوان زبل بره آفریقا چی میشه؟\nمیشه کاپیتان بلک!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مهمانی عرقیجات",
+            content = "می‌دونی عرقیجات وقتی مهمون براشون میاد نگران چی میشن؟\nنگران اینکه یه وقت کم و کاسنی پیش نیاد!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کتک خوردن مارها",
+            content = "می‌دونی اگه مارها رو کتک بزنی چی میشه؟\nمیرن بوآشونو می‌ارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "گلبول سفید در رگ",
+            content = "گلبول سفید میره تو خون میبینه همه گلبول قرمزن، ناراحت میشه میگه: چرا منو در شریان (جریان) قرار ندادین؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پاس کردن هندسه",
+            content = "می‌دونی اگه درس هندسه رو پاس کنی چی میشه؟\nترم بعد باید هند۴ رو پاس کنی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ورشکستگی تاکسی پنج برادر",
+            content = "پنج داداش یک تاکسی میخرن اما بعد از یک ماه ورشکست میشن. چرا؟\nچون ۵ تایی با هم میرفتن مسافرکشی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چرخ و فلک الکترون‌ها",
+            content = "می‌دونی چرا الکترون‌ها سوار چرخ و فلک نمیشن؟\nچون باردارن براشون خوب نیست!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "قطع جریان برق",
+            content = "برای اینکه جریان برق را قطع کنید چه باید کرد؟\nباید قبض برق را پرداخت نکرد!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سفارش پیتزای قلی",
+            content = "قلی زنگ میزنه پیتزافروشی میگه یه پیتزا میخواستم. فروشنده میگه: به نام...؟\nقلی میگه: آخ آخ ببخشید! به نام خدا، یه پیتزا میخواستم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چهار نفر زیر چتر",
+            content = "چطور میشه ۴ نفر زیر یک چتر باشن و هیچ‌کدوم خیس نشن؟\nوقتی بارون نیاد!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "علت سه تا w در اینترنت",
+            content = "چرا وقتی میخوایم آدرس اینترنت رو بزنیم به جای یک w باید ۳ تا w بزنیم؟\nچون کار از محکم‌کاری عیب نمیکنه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "«به» خیس",
+            content = "می‌دونی به یک «به» خیس چی میگن؟\nبهتر!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خط وسط قرص",
+            content = "خط وسط قرص برای چی گذاشته شده؟\nبه خاطر اینکه اگه با آب پایین نرفت با پیچ‌گوشتی بفرستیش پایین!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شستن ماشین آردی",
+            content = "می‌دونی چرا ماشین آردی رو نمیشورن؟\nچون بهش آب بخوره خمیر میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "یک تن بار جدید",
+            content = "می‌دونی اگه یک تن بار جدید برسه بهش چی میگن؟\nمیگن نیوتن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "معافیت فیل از سربازی",
+            content = "می‌دونی چرا فیل‌ها از سربازی معافند؟\nچون کف پاشون صافه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مسافرت نرفتن مار",
+            content = "می‌دونی چرا مار به مسافرت نمیتونه بره؟\nچون دست نداره که خداحافظی کنه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رنگ هویج و خیار",
+            content = "می‌دونین چرا هویج نارنجیه؟ چون بهش میاد!\nحالا می‌دونین چرا خیار سبزه؟ چون نارنجی بهش نمیاد!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خورشت در ظرف مسی",
+            content = "می‌دونی چرا خورشت رو میریزن تو ظرف مسی؟\nچون رونالدو خورشت دوست نداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رد نشدن فیل از سوزن",
+            content = "می‌دونید چرا فیل‌ها از سوزن رد نمیشن؟\nچون ته دمشون گره داره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "گرسنگی قابلمه‌ها",
+            content = "می‌دونی قابلمه‌ها وقتی گشنه‌شون بشه چی میشه؟\nدلشون ظرف میره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "«به» سابق",
+            content = "می‌دونی به «به»ای که قبلاً بود ولی الان نیست چی میگن؟\nبهبود!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "وانتِ «به»",
+            content = "می‌دونی به یک وانت «به» چی میگن؟\nبهدار!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ارث گوگل",
+            content = "می‌دونید اگه گوگل بمیره به بچه‌هاش چی میرسه؟\nگوگل ارث!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "فیل بالای درخت",
+            content = "می‌دونی اگه یک فیل بره بالای درخت چی میشه؟\nیک فیل از روی فیلا روی زمین کم میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دستگیری پرتقال",
+            content = "پلیس پرتقال رو دستگیر میکنه. اگه گفتی چرا؟\nچون موز دوره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ترس اسکلت",
+            content = "اگه گفتی چرا اسکلت میترسه از ساختمون پرتش کنی پایین؟\nچون جیگر نداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بنزین نزدن اسپارتاکوس",
+            content = "اگه گفتی چرا اسپارتاکوس هیچ وقت بنزین نمیزد؟\nچون بی‌باک بود!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پرواز پرنده‌ها به جنوب",
+            content = "اگه گفتی چرا پرنده‌ها به جنوب پرواز میکنن؟\nچون برای پیاده رفتن خیلی دوره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بال زدن در کبابی",
+            content = "اگه گفتی چرا هروقت میریم کبابی بیشتر از دو تا بال نمیتونیم بزنیم؟\nچون میخوریم به سقف!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دست ندادن ماهی‌ها",
+            content = "اگه گفتی چرا ماهی‌ها بهم دست نمیدن؟\nچون دستاشون خیسه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "علت نگفتن لوح به تبلت",
+            content = "می‌دونی چرا به تبلت نمیگن لوح؟\nچون میترسن مردم فکر کنن زمان هخامنشیان اینترنت پرسرعت داشتیم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ازدواج نکردن بادبادک‌ها",
+            content = "می‌دونی چرا بادبادک‌ها هیچ‌وقت ازدواج نمیکنن؟\nچون همه‌ش دنبال نخ دادن به این و اونن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دپرس بودن ساعت‌ها",
+            content = "می‌دونی چرا ساعت‌ها همیشه دپرس هستن؟\nچون همه‌ش تو فکر اینن که چرا زمان اینقدر زود میگذره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نشستن مگس‌ها روی شیشه",
+            content = "اگه گفتی چرا مگس‌ها همیشه میشینن رو شیشه؟\nچون میخوان بدونن اون‌طرف دنیا چه خبره ولی پول ویزا ندارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نگاه کردن به سقف موقع فکر",
+            content = "اگه گفتی چرا وقتی داریم فکر میکنیم نگاهمون رو میدوزیم به سقف؟\nچون منتظریم جواب از اون بالا برامون نازل بشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "حرف نزدن کفش‌ها",
+            content = "می‌دونی چرا کفش‌ها هیچ‌وقت حرف نمیزنن؟\nچون همیشه پاشون تو کفشِ همدیگه‌ست و خجالت میکشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "به تعطیلات نرسیدن تقویم‌ها",
+            content = "می‌دونی چرا تقویم‌ها هیچ‌وقت به تعطیلات نمیرسن؟\nچون همه‌ش دارن ورق میخورن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خسته نشدن لیوان‌ها",
+            content = "می‌دونی چرا لیوان‌ها هیچ‌وقت خسته نمیشن؟\nچون همه‌ش خالی میشن و دوباره پر میشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "لنگه به لنگه شدن جوراب‌ها",
+            content = "می‌دونی چرا جوراب‌ها همیشه لنگه به لنگه میشن؟\nچون توی ماشین لباسشویی با هم قهر میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مطمئن بودن یخچال",
+            content = "می‌دونی چرا یخچال آدم مطمئنیه؟\nچون هر چی بهش بگی تو خودش نگه میداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دکتر و بیمار حواسپرت",
+            content = "طرف میره دکتر، میگه آقای دکتر هرچی میخورم یادم میره. دکتر میگه از کی؟ میگه چی از کی؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دست بالا کردن در کلاس",
+            content = "معلم گفت کسی که سوال داره دستشو ببره بالا. یکی گفت: سوال ندارم، فقط خواستم ببینم سیستم کار میکنه یا نه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پیدا کردن عینک با عینک",
+            content = "یه نفر انقدر حواسپرت بود که رفت عینکشو پیدا کنه، با عینک رفت!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کلاس انگیزشی",
+            content = "طرف رفته بود کلاس انگیزشی، آخرش با انگیزه برگشت خونه خوابید!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دیر جواب دادن پیام",
+            content = "طرف انقدر دیر جواب پیام میده که باید براش نامه اداری بفرستی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "عمر طولانی افراد فضول",
+            content = "می‌دونی چرا آدمای فضول عمرشون طولانیه؟\nچون از زندگی همه باخبرن، حوصله‌شون سر نمیره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تنها ورزش روزانه",
+            content = "تنها ورزشی که من هر روز انجام میدم، دویدن سمت شارژره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رفاقت مثل اینترنت نامحدود",
+            content = "من توی رفاقت مثل اینترنت نامحدودم، فقط سرعت ندارم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "صبوری و شروع از فردا",
+            content = "من آدم صبوری‌ام؛ سال‌هاست دارم منتظر اون «از فردا شروع میکنم» می‌چرخم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رزرو کار امروز برای پس‌فردا",
+            content = "من انقدر کار امروز رو گذاشتم برای فردا که فردام پره، رفتم برای پس‌فردا رزرو کردم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "برنامه ورزشی سه ست",
+            content = "برنامه ورزشی من: از تخت تا یخچال، از یخچال تا تخت، روزی سه ست!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "گم شدن لنگه جوراب",
+            content = "می‌دونی چرا یه لنگه جوراب همیشه گم میشه؟\nچون لنگه دیگه‌ش عاشقِ زندگی مجردیه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خوشمزه شدن نون خشک در رژیم",
+            content = "می‌دونی چرا آدم وقتی رژیمه، حتی نون خشک هم خوشمزه میشه؟\nچون معده میگه: قحطیه، ادا درنیار، بخور!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رب جون پاشو بریم",
+            content = "دو تا گوجه داشتن با هم میرفتن. یهو ماشین از رو یکیشون رد میشه، اون یکی میگه: رُب جون پاشو بریم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سید تو دخالت نکن",
+            content = "دو تا گوجه‌فرنگی با هم دعوا میکردن، یه گوجه‌سبز میاد جداشون کنه. گوجه‌فرنگی‌ها میگن: سید تو دخالت نکن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پاک کردن سفره ماهی",
+            content = "می‌دونین ماهی‌ها بعد از اینکه غذا میخورن چیکار میکنن؟\nدستمال میارن سفره ماهی رو پاک میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "موش جلوی آینه",
+            content = "موشه میره جلو آینه از خودش خوشش میاد میگه: واااای موش بخورتت!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "گیلاس بالای درخت",
+            content = "یه فیله میره بالای درخت. یارو بهش میگه اون بالا چیکار میکنی؟ میگه من گیلاسم! فیله گوشاشو تکون میده میگه: ببین اینم برگامه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "روباه و زاغ و شوهر",
+            content = "روباهی به زاغی گفت: چه دمی، چه سری! زاغ عصبانی شد گفت: بی‌تربیت، اون موقع من کلاس اول بودم، الان شوهر دارم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "استعلام قوری",
+            content = "یارو دنبال قوری میگشت، این‌ور رو نگاه کرد نبود، اون‌ور رو نگاه کرد بود!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "قایم شدن در کله‌پزی",
+            content = "یارو میره کله‌پزی، فروشنده میگه: چشم بذارم؟ یارو میگه: تو این یه ذره مغازه کجا قایم شم آخه؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "امتحان آشپزی با پا",
+            content = "از یکی که داشت با پا غذا درست میکرد پرسیدن چرا؟ گفت آخه دست‌پختم خوب نیست، دارم با پا امتحان میکنم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ازدواج پرشیا و ۲۰۶",
+            content = "می‌دونی اگه پرشیا با ۲۰۶ ازدواج کنه بچه‌شون چی میشه؟\nمیشه زانتیا، آخه ازدواج فامیلی بوده بچه‌شون عقب‌مانده شده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "میگوها چی میگن",
+            content = "می‌دونی میگوها چی میگن؟\nمیگن: می می می می!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شاتل و نان فضانوردها",
+            content = "می‌دونید فضانوردها تو فضا نون از کجا میارن؟\nشاتل براشون میپزه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "اردبیل و تپه ارده",
+            content = "می‌دونین اگه یه تپه ارده ریخته باشه رو زمین با چی باید جمعش کنیم؟\nاردبیل!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای سیر و پیاز",
+            content = "یه سیر و پیاز دعواشون میشه. سیره به پیازه میگه: حیف که سیرم وگرنه میخوردمت!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دور زدن در خواستگاری",
+            content = "یارو میره خواستگاری، از دختره خوشش نمیاد، به بابای عروس میگه: ما میریم یه دور میزنیم برمیگردیم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تخمه خریدن",
+            content = "می‌دونی تخم خر به کی میگن؟\nبه کسی میگن که میره تخمه میخره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پشه در زمستان",
+            content = "به پشه میگن چرا زمستونا پیداتون نیست؟\nمیگه: نه اینکه تابستونا خیلی برخوردتون خوبه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تولد قلی",
+            content = "به قلی میگن تولدت کیه؟ میگه ۵ آذر. میگن چه سالی؟ میگه هر سال دیگه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دونه‌های انار و ذرت",
+            content = "یه جوری درباره دونه‌های انار میگن با نظم و ترتیب یکجا نشستن، انگار دونه‌های ذرت با شلوار کردی تو کوچه ولن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سفارش دراکولا در رستوران",
+            content = "سه نفر میرن رستوران، اولی میگه کوکاکولا، دومی میگه پپسی کولا، سومی میگه دراکولا!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "خسته نباشید به زنبورها",
+            content = "از یکی می‌پرسن به زنبورایی که شهد جمع می‌کنن چی میگن؟ میگه: میگن خسته نباشین!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "جوجه‌تیغی و کیوی",
+            content = "جوجه‌تیغی با کیوی راه میرفته. می‌پرسن این کیه باهاته؟ میگه پسرمه، سربازه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "اسب و مدیر سیرک",
+            content = "اسبه زنگ میزنه مدیر سیرک میگه دنبال کار میگردم. مدیر میگه باید توانایی داشته باشی! اسبه میگه همین که الان دارم حرف میزنم جالب نیست؟!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پیاده شدن جادوگر از جارو",
+            content = "می‌دونی جادوگر سوار جارو خسته شه چیکار میکنه؟ از جاروش پیاده میشه سوار طی میشه، یه مسیری رو جارو میکنه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دست دادن با حالت تهوع",
+            content = "می‌دونی وقتی حالت تهوع بهت دست میده باید چیکار کنی؟ ادب حکم میکنه تو هم باهاش دست بدی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پاستا آمدن لازانیا",
+            content = "ماکارونی زنگ میزنه لازانیا میگه کجایی؟ میگه یه دقیقه پاستا (پایستا) اومدم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سورتمه تفاهم اسکیمو",
+            content = "اسکیموئه زنگ میزنه به رفیقش میگه تو زنگ زدی؟ میگه نه. میگه هیچی پس، حتماً سورتمه تفاهم شده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مثلث بودن چندضلعی‌ها",
+            content = "می‌دونی چندضلعی‌ها بخوان همدیگه رو به آرامش دعوت کنن چی میگن؟ میگن به اعصاب خودت مثلث باش!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چسبیدن به کف ماهیتابه",
+            content = "تو تیمارستان همه‌چی میپریدن می‌گفتن ما سیب‌زمینی سرخ کرده‌ایم، یکی نشسته بود. رییس پرسید چرا نشسته‌ای؟ گفت آخه من چسبیدم کف ماهیتابه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کرم در قابلمه ماکارونی",
+            content = "کرمه داشته رد میشده میفته تو قابلمه ماکارونی، میگه: عه حموم چقدر شلوغه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "منشی دفتر کار",
+            content = "مرده به زنش میگه باید برام منشی پیدا کنم، زنه میگه باید زشت و پیر باشه! مرده میگه خب از فردا خودت بیا منشی شو دیگه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پلنگ کاکائو و مهران معاون",
+            content = "چرا مهران مدیری داریم ولی مهران معاون نداریم؟ اصلاً چرا شیرکاکائو داریم ولی پلنگ‌کاکائو نداریم؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "الله اکبر گفتن مادربزرگ",
+            content = "مادربزرگم داشت نماز میخوند، رفتم سر کیفش گفت: الللللله اکبرررررر!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "منحصربه‌فرش بودن قالیچه",
+            content = "می‌دونی وقتی قالیچه‌ها کار خوب میکنن بهشون چی میگن؟ میگن آفرین تو منحصربه‌فرشی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "پلیس فتا برای چاق‌ها",
+            content = "می‌دونین اگه چندتا آدم چاق خلاف کنن میبرنشون کجا؟ پلیس فتا!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رنگ سورتمه‌ای در قطب",
+            content = "می‌دونین توی قطب جنوب به رنگ سرمه‌ای چی میگن؟ میگن رنگ سورتمه‌ای!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "نام‌گذاری اسم میثم",
+            content = "کسی که تاکید داره الکل برای بدن سمه، اسم بچه‌شو میذاره میثم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غرق کردن زیردریایی",
+            content = "می‌دونید چجوری یه زیردریایی رو غرق میکنن؟ در میزنن و فرار میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "سینه زدن ماشین‌ها در برف",
+            content = "می‌دونید ماشین‌هایی که تو برف گیر کردن و زنجیر ندارن چیکار میکنن؟ سینه میزنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "موز و نمک",
+            content = "طرف به موزها نمک میزد و دور می‌انداخت، گفتن چرا؟ گفت آخه موز شور دوست ندارم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مثال جسم شفاف",
+            content = "از یکی می‌پرسن جسم شفاف چیه؟ میگه چیزی که اون‌ورش معلوم باشه مثل نردبان!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "جیوه شدن فلزات",
+            content = "می‌دونی فلزات وقتی شوهرشون بمیره چی میشن؟ جیوه (بیوه) میشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "آب شدن بچه‌ی دو خجالتی",
+            content = "می‌دونی اگه دو تا خجالتی با هم ازدواج کنن بچه‌شون چی میشه؟ بچه‌شون آب میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تغییر اسم به عسل",
+            content = "دختره میره ثبت‌احوال میگه اسمم رو بذارین عسل. میگن اسمت چیه؟ میگه شیرین. میگن خب چه مشکلی داره؟ میگه آخه رنگ چشام عسل، طعم لبم عسل...",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کمونیست در شوروی",
+            content = "یکی میره شوروی، این‌ور رو نگاه میکنه میبینه کمونیست، اون‌ور رو نگاه میکنه میبینه کمو هست!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "صلوات مربای گل محمدی",
+            content = "کره بادام‌زمینی با نوتلا حرفشون میشه، مربای گل‌محمدی میاد میگه یه صلوات بفرستید خوبیت نداره!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "قیچی و بریدن",
+            content = "می‌دونین آدم دیگه کجا میبُره؟ زمانی که قیچی رو میگیره دستش!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دلقک‌ماهی و حوصله‌سررفتگی",
+            content = "می‌دونین وقتی ماهی‌ها حوصله‌شون سر میره چیکار میکنن؟ میرن پیش دلقک‌ماهی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "کانال کولر",
+            content = "می‌دونین مزخرف‌ترین کانال کدوم کاناله؟ کانال کولر!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ته‌ریش نهال‌ها",
+            content = "می‌دونین درخت‌ها زمانی که نهال هستن به جای ریشه، ته‌ریش دارن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بزغالود شدن صدا",
+            content = "می‌دونین بزغاله‌ها وقتی ناراحت میشن چی میشه؟ صداشون بزغالود میشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دعوای دو شلوار خارجی",
+            content = "دو تا شلوار خارجی دعواشون میشه میگن: فاق یو من!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "مشکل زبان در ژاپن",
+            content = "یارو میره ژاپن ازش می‌پرسن مشکل زبان نداشتین؟ میگه من نه ولی اونا چرا!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "زکریای ناراضی",
+            content = "اگه زکریای رازی الکل رو کشف نمیکرد چی میشد؟ میشد زکریای ناراضی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "افتادن کلاه کلاه‌قرمزی",
+            content = "می‌دونین اگه کلاه‌قرمزی رو برعکس کنین چی میشه؟ هیچی کلاش میفته!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "عکاسی و سپری کردن اوقات",
+            content = "یارو ساعتش رو به سپر ماشین میمالید، گفتن چیکار میکنی؟ گفت دارم اوقاتم رو سپری میکنم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "هزارپا و پاهاش",
+            content = "یه هزارپا از دیوار میفته میگه: آخ پام پام پام پام پام پام...!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تیمور لنگ و لنگ‌لنگان",
+            content = "معلم: تیمور لنگ چطور به حکومت رسید؟ دانش‌آموز: لنگ‌لنگان!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "هورمون معلم پرورشی",
+            content = "اگه مدیر مدرسه بودم معلم‌های پرورشی رو اخراج میکردم، چون معتقدم معلم طبیعی‌ش خوبه، به اینا هورمون تزریق میکنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "صدق‌الله العظیم مغازه‌دار",
+            content = "یارو صبح مغازه رو باز کرد گفت بسم‌الله، دید همه‌چی رو بردن، گفت صدق‌الله العظیم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دروغ لاک‌پشت",
+            content = "به لاک‌پشته میگن دروغ بگو، میگه: دویدم و دویدم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دنبال تاریخ انقضا در عقدنامه",
+            content = "یارو ۴ ساعت زل زده بود به عقدنامه، زنش گفت دنبال چی میگردی؟ گفت دنبال تاریخ انقضاش!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "منفجر شدن تو بانک",
+            content = "یارو رفت بانک وام بگیره، ضامن نداشت منفجر شد!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "گیر کردن راهنما",
+            content = "به یارو میگن چرا با ماشین دور میدان میچرخی؟ میگه راهنمام گیر کرده!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تماس با آفریقا با سکه سیاه",
+            content = "یارو یه سکه سیاه پیدا میکنه میندازه تو تلفن عمومی میگه: الو آفریقا؟",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "آکروپال ارشد چینی",
+            content = "می‌دونی وقتی یه چینی کارشناسی ارشد بگیره بهش چی میگن؟ آکروپال!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "فالوده بستنی سازها",
+            content = "دسر مورد علاقه سازها چیه؟ فالوده بستنی!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "بهروز و بهیار",
+            content = "به بهی که شب‌ها بیرون نمیاد میگن بهروز، به دوست همیشگی به میگن بهیار!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "دیس پرنده فضایی‌ها",
+            content = "فضایی‌ها وقتی میخوان برن مسافرت با دیس پرنده میرن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "فالوده شدن دست",
+            content = "دو تا بستنی دعواشون میشه، این یکی میگه برو نمیخوام دستم به خونت فالوده بشه!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "شغل مردم گواتمالا",
+            content = "شغل اکثر مردم گواتمالا چیه؟ گوات میمالن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "آفت زدن به موی دندان",
+            content = "دندونا میخوان برن مهمونی به موهاشون آفت میزنن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تف شدن اقیانوس‌ها",
+            content = "اگه اقیانوس‌ها رژیم بگیرن چی میشن؟ تف میشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "ریشه و ریش تارزان",
+            content = "چرا تارزان ریش نداشت؟ چون معتقد بود به ریش نیست به ریشه‌ست!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "غلافه شدن شمشیرها",
+            content = "شمشیرها حوصله‌شون سر بره غلافه میشن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "تحت تک‌تیر قرار گرفتن",
+            content = "به تفنگ‌ها سخن بزرگان بگی تحت تک‌تیر قرار میگیرن!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "رو مود بودن اینترنت",
+            content = "اینترنتا دعواشون میشه میگن نرو رو مودم، امروز رو مود نیستم!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "موستاجر",
+            content = "به کسی که موس وارد کشور میکنه چی میگن؟ موستاجر!",
+            category = "JOKE",
+            readTimeMinutes = 1
+        ),
 
         // --- چیستان (Riddles) ---
         StoryItem(
@@ -313,6 +1687,699 @@ object InitialData {
             content = "اگر نیمه‌شب باران ببارد، آیا ممکن است ۷۲ ساعت بعد هوا آفتابی باشد؟",
             category = "RIDDLE",
             answer = "خیر؛ ۷۲ ساعت بعد دوباره دقیقاً نیمه‌شب است و خورشیدی وجود ندارد.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۱: قایق ماهیگیری و نردبان",
+            content = "یک قایق ماهیگیری با یک نردبان در بندر به دیواری تکیه داده است. پنج پارو و دو تور ماهیگیری در قایق وجود دارد. فاصله بین دو پله متوالی روی نردبان یک متر است. اگر امواجی که به دیوار می‌زند در هر نیم ساعت نیم متر بالا رود، چقدر طول می‌کشد تا شش پله از نردبان زیر امواج قرار گیرد؟",
+            category = "RIDDLE",
+            answer = "هیچ‌چیز زیر آب نخواهد رفت، زیرا قایق ماهیگیری همراه با امواج بالا می‌رود.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۲: تقسیم عدد ۳۰ بر نصف",
+            content = "اگر عدد ۳۰ را به نصفِ عدد (۰.۵) تقسیم کنید و ۱۰ را به آن اضافه کنید چه چیزی به دست می‌آید؟",
+            category = "RIDDLE",
+            answer = "۷۰؛ زیرا ۳۰ تقسیم بر ۰.۵ برابر ۶۰ می‌شود و ۱۰ + ۶۰ = ۷۰.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۳: بزرگی فیل بدون وزن",
+            content = "چه چیزی به بزرگی یک فیل است اما اصلاً وزن ندارد؟",
+            category = "RIDDLE",
+            answer = "سایه یک فیل",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۴: نه سوزان در آتش نه غرق در آب",
+            content = "چه چیزی را نمی‌توان در آتش سوزاند یا در آب غرق کرد؟",
+            category = "RIDDLE",
+            answer = "یخ؛ به‌جای سوختن در آتش ذوب شده و در آب شناور می‌شود.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۵: لیوان آب و شلیک تفنگ",
+            content = "جان وارد یک بار می‌شود و یک لیوان آب می‌خواهد. ساقی به‌طور ناگهانی با تفنگ به سقف شلیک می‌کند. جان می‌گوید متشکرم و بیرون می‌رود. جان چرا آب می‌خواست؟",
+            category = "RIDDLE",
+            answer = "جان سکسکه‌اش گرفته بود و ساقی از روش غافلگیری استفاده کرد تا او را از شر سکسکه خلاص کند.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۶: موهای طلایی در گوشه",
+            content = "آن چیست که موهای طلایی دارد و در گوشه‌ای ایستاده است؟",
+            category = "RIDDLE",
+            answer = "جارو",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۷: معمای ۴۰۰۰ ساله سومریان",
+            content = "یک خانه وجود دارد. شخصی نابینا وارد آن می‌شود و بینا از آن خارج می‌شود! آن چیست؟",
+            category = "RIDDLE",
+            answer = "مدرسه (این معما بیانگر ارزشی است که سومریان برای آموزش قائل بودند).",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۸: یک سر و چهار پا",
+            content = "آن چیست که یک سر و چهار پا دارد اما راه نمی‌رود؟",
+            category = "RIDDLE",
+            answer = "تخت‌خواب!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۳۹: سفر به سراسر دنیا در گوشه‌ای",
+            content = "آن چه چیزی است که می‌تواند به سراسر دنیا سفر کند در حالی که در یک گوشه نشسته است؟",
+            category = "RIDDLE",
+            answer = "تمبر پستی!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۰: سر بدون بدن",
+            content = "آن چیست که سر دارد، اما بدن ندارد؟",
+            category = "RIDDLE",
+            answer = "سکه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۱: جغرافیای بی‌رود و شهر",
+            content = "کجاست که رودخانه‌هایش بدون آب، شهرهایش بدون ساختمان و جنگل‌هایش بدون درخت هستند؟",
+            category = "RIDDLE",
+            answer = "نقشه جهان!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۲: سقوط هواپیما در مرز",
+            content = "اگر هواپیما در مرز بین آمریکا و کانادا سقوط کند، بازماندگان را کجا دفن می‌کنند؟",
+            category = "RIDDLE",
+            answer = "بازماندگان را که دفن نمی‌کنند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۳: روبه‌رو اما ناپیدا",
+            content = "آن چیست که درست روبروی شماست اما هرگز نمی‌توانید آن را ببینید؟",
+            category = "RIDDLE",
+            answer = "آینده!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۴: پله‌های خانه زرد",
+            content = "یک خانه یک طبقه تماماً از رنگ زرد ساخته شده؛ دیوارها، درها، اثاث و غیره. به نظر شما پله‌ها چه رنگی خواهند بود؟",
+            category = "RIDDLE",
+            answer = "خانه یک طبقه پله ندارد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۵: خیس نشدن زیر باران",
+            content = "مردی زیر باران شدید بدون چتر ایستاده است اما یک تار مویش هم خیس نمی‌شود، چرا؟",
+            category = "RIDDLE",
+            answer = "او کچل است!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۶: ایستادن روی آن پس از دادن",
+            content = "آن چیست که پس از دادنش به دیگری، باید روی آن بایستید؟",
+            category = "RIDDLE",
+            answer = "قول!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۷: گرفتن با دست چپ",
+            content = "آن چیست که با دست چپ می‌توانید آن را بگیرید ولی هرگز با دست راست نمی‌توانید؟",
+            category = "RIDDLE",
+            answer = "آرنج دست راست!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۸: تخته‌سیاه",
+            content = "آن چیست که وقتی تمیز است سیاه است و وقتی کثیف شود، سفید رنگ است؟",
+            category = "RIDDLE",
+            answer = "تخته سیاه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۴۹: دیدن از درون دیوار",
+            content = "آن چیست که با آن می‌توانید از درون دیوار ببینید؟",
+            category = "RIDDLE",
+            answer = "پنجره!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۰: بالا و پایین رفتن پله‌برقی",
+            content = "آن چیست که بالا و پایین می‌رود اما هرگز یک سانت هم از جای خود جابه‌جا نمی‌شود؟",
+            category = "RIDDLE",
+            answer = "پله برقی!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۱: استفاده دیگران از مال تو",
+            content = "آن چیست که مال تو است اما مردم بیشتر از تو از آن استفاده می‌کنند؟",
+            category = "RIDDLE",
+            answer = "اسم تو!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۲: یک چشم بی‌بینایی",
+            content = "آن چیست که یک چشم دارد اما هیچ چیز نمی‌بیند؟",
+            category = "RIDDLE",
+            answer = "سوزن!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۳: دو دست بدون دست زدن",
+            content = "آن چیست که دو دست دارد اما نمی‌تواند دست بزند؟",
+            category = "RIDDLE",
+            answer = "ساعت!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۴: چهار پا بدون راه رفتن",
+            content = "آن چیست که چهار پا دارد اما نمی‌تواند راه برود؟",
+            category = "RIDDLE",
+            answer = "میز!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۵: دندان رایگان",
+            content = "آن چیست که دو دفعه اول به رایگان به هرکس داده می‌شود، ولی دفعه سوم باید پول آن را بدهید؟",
+            category = "RIDDLE",
+            answer = "دندان!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۶: نرده مزرعه",
+            content = "آن چیست که تمام طول مزرعه را می‌پیماید اما هیچ‌وقت از جایش تکان نمی‌خورد؟",
+            category = "RIDDLE",
+            answer = "نرده!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۷: شمع",
+            content = "من وقتی جوان هستم قد بلندی دارم و وقتی پیر شدم کوتاه قد می‌شوم. من چه هستم؟",
+            category = "RIDDLE",
+            answer = "شمع!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۸: دستکش",
+            content = "آن چیست که پنج انگشت دارد اما دست نیست؟",
+            category = "RIDDLE",
+            answer = "دستکش!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۵۹: رودخانه یخ‌زده",
+            content = "مردی از آن سوی رودخانه سگش را صدا زد. سگ بدون اینکه از قایق استفاده کند یا خیس شود، به سمت مرد رفت. چطور ممکن است؟",
+            category = "RIDDLE",
+            answer = "رودخانه یخ زده بود!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۰: پر کردن اتاق با نور",
+            content = "آن چیست که اتاقی را پر می‌کند اما هیچ فضایی را اشغال نمی‌کند؟",
+            category = "RIDDLE",
+            answer = "نور!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۱: آب دادن به آتش",
+            content = "آن چیست که اگر غذا به آن بدهی زنده است و اگر آب به آن بدهی می‌میرد؟",
+            category = "RIDDLE",
+            answer = "آتش!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۲: تعیین روز هفته",
+            content = "دیروز اگر فردا بود امروز یکشنبه بود. امروز چندشنبه است؟",
+            category = "RIDDLE",
+            answer = "سه‌شنبه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۳: اشتباه در فرهنگ لغت",
+            content = "تنها کلمه‌ای که در فرهنگ لغت اشتباه نوشته می‌شود چیست؟",
+            category = "RIDDLE",
+            answer = "کلمه «اشتباه»!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۴: ملاقات دو دیوار",
+            content = "به محل ملاقات دو دیوار چه می‌گویند؟",
+            category = "RIDDLE",
+            answer = "گوشه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۵: کتابخانه پرقصه",
+            content = "کدام ساختمان است که قصه‌های زیادی برای تعریف کردن دارد؟",
+            category = "RIDDLE",
+            answer = "کتابخانه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۶: فرزندان خانم افشار",
+            content = "خانم افشار چهار دختر دارد که هر دختر یک برادر دارند، خانم افشار چند فرزند دارد؟",
+            category = "RIDDLE",
+            answer = "پنج فرزند (۴ دختر و ۱ پسر)",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۷: تخم‌گذاری خروس",
+            content = "خروسی روی لبه دیواری نشسته است که به سمت شرق متمایل است. وقتی تخم بگذارد، تخم به سمت شرق می‌افتد یا غرب؟",
+            category = "RIDDLE",
+            answer = "خروس تخم نمی‌گذارد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۸: هویج",
+            content = "آن چیست که نارنجی است و کلاهی سبز به سر دارد؟",
+            category = "RIDDLE",
+            answer = "هویج!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۶۹: کیک فنجانی",
+            content = "آن کدام فنجان است که نمی‌توان در آن آب ریخت؟",
+            category = "RIDDLE",
+            answer = "کیک فنجانی!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۰: پاپایا",
+            content = "آن چیست که پدر میوه‌هاست؟",
+            category = "RIDDLE",
+            answer = "پاپایا!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۱: ذرت (بلال)",
+            content = "آن چیست که بیرونش را دور ریخته و درونش را می‌پزید. سپس بیرونش را می‌خورید و درونش را دور می‌ریزید؟",
+            category = "RIDDLE",
+            answer = "ذرت (بلال)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۲: کاهو",
+            content = "آن چیست که سر دارد اما چشم و گوش و دماغ ندارد و آن را می‌خوریم؟",
+            category = "RIDDLE",
+            answer = "کاهو!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۳: کلاه زرد در رودخانه",
+            content = "اگر یک کلاه زرد را درون رودخانه‌ای قرمز بیاندازید چه می‌شود؟",
+            category = "RIDDLE",
+            answer = "خیس می‌شود!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۴: بانک",
+            content = "آن چیست که شاخه‌های زیادی دارد اما میوه نمی‌دهد و هیچ برگی هم ندارد؟",
+            category = "RIDDLE",
+            answer = "بانک!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۵: نام فرزند چهارم",
+            content = "مادر افشین چهار فرزند دارد؛ افروز، بهروز و شهروز. نام فرزند چهارم او چیست؟",
+            category = "RIDDLE",
+            answer = "افشین",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۶: زبان",
+            content = "آن چیست که می‌چشد اما بو نمی‌کند؟",
+            category = "RIDDLE",
+            answer = "زبان!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۷: خرس قطبی",
+            content = "فردی خانه‌ای ساخته که هر چهار دیوار آن به سمت جنوب پنجره دارد. خرسی بزرگ به این خانه نزدیک می‌شود، این خرس چه رنگی است؟",
+            category = "RIDDLE",
+            answer = "خرس سفید است. چون خانه‌ای که هر چهار دیوارش رو به سمت جنوب باشد در قطب شمال قرار دارد.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۸: سم در آب",
+            content = "قاتلی کسی را ربود و مجبور کرد یکی از دو قرص را بخورد... قاتل چگونه زنده ماند؟",
+            category = "RIDDLE",
+            answer = "هر دو قرص بی‌ضرر بودند؛ سم داخل لیوان آب مقتول بود.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۷۹: پدربزرگ، پدر و نوه",
+            content = "دو پدر و دو پسر به ماهیگیری رفتند و سه ماهی به خانه آوردند... چطور ممکن است؟",
+            category = "RIDDLE",
+            answer = "سه نفر بودند: پدربزرگ، پدر و نوه.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۰: شرط پادشاه و سخن زندانی",
+            content = "مرد محکوم چه جمله‌ای به پادشاه گفت تا نجات یابد؟",
+            category = "RIDDLE",
+            answer = "گفت: «من با گاومیش‌های وحشی کشته خواهم شد!» تناقض این جمله پادشاه را مجبور کرد او را آزاد کند.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۱: عبور از رودخانه",
+            content = "الکس (۹۰kg)، بروک (۸۰kg)، کریس (۶۰kg) و داستی (۴۰kg) با ۲۰kg بار و قایق ۱۰۰kg چگونه عبور می‌کنند؟",
+            category = "RIDDLE",
+            answer = "کریس و داستی می‌روند، داستی برمی‌گردد، الکس می‌رود، کریس برمی‌گردد، کریس و داستی می‌روند، داستی برمی‌گردد، بروک و بار می‌روند، کریس برمی‌گردد و در نهایت کریس و داستی با هم می‌روند.",
+            readTimeMinutes = 2
+        ),
+        StoryItem(
+            title = "چیستان ۸۲: دو راهی شهر حقیقت و دروغ",
+            content = "از فرد ایستاده در دو راهی شهر حقیقت و دروغ چه سوالی بپرسیم تا راه حقیقت را نشان دهد؟",
+            category = "RIDDLE",
+            answer = "بپرسید: «شما در کدام شهر زندگی می‌کنید؟» هر دو نفر به سمت شهر حقیقت اشاره می‌کنند.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۳: دو سلمانی شهر",
+            content = "چرا فرد منطق‌دان به سراغ سلمانی با موهای ژولیده رفت؟",
+            category = "RIDDLE",
+            answer = "چون سلمانی دیگر موهایش را اصلاح کرده بود و کار سلمانی ژولیده بهتر بود!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۴: قاتل خانه گرد",
+            content = "خدمتکار گفت در حال گردگیری گوشه کنار خانه گرد بودم! چرا او قاتل است؟",
+            category = "RIDDLE",
+            answer = "خانه گرد هیچ گوشه‌ای ندارد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۵: در زدن هتل",
+            content = "چرا زن به مرد غریبه‌ای که در اتاقش را زد مشکوک شد؟",
+            category = "RIDDLE",
+            answer = "چون اگر فکر می‌کرد اتاق خود اوست، دستگیره را می‌کشید نه اینکه اول در بزند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۶: پا روی زمین",
+            content = "روی تخت ۲ سگ، ۵ گربه، زرافه، ۶ گاو و غاز هستند و ۳ کبوتر پرواز می‌کنند... چند پا روی زمین است؟",
+            category = "RIDDLE",
+            answer = "۶ پا (۴ پایه تخت + ۲ پای شما)",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۷: انتخاب درهای نجات",
+            content = "بین شیر گرسنه، قاتل شکنجه‌گر و صندلی برقی کدام در امن است؟",
+            category = "RIDDLE",
+            answer = "در شماره ۳ (صندلی برقی)؛ چون خانه برق ندارد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۸: تولد ۱۹۵۵",
+            content = "دختری متولد ۱۹۵۵ چگونه هفته گذشته تولد ۱۷ سالگی‌اش بود؟",
+            category = "RIDDLE",
+            answer = "او در اتاق شماره ۱۹۵۵ بیمارستان به دنیا آمده است!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۸۹: رمز گاوصندوق",
+            content = "دزد چگونه رمز گاوصندوق را حدس زد وقتی کارمند گفت کد هر روز متفاوت است؟",
+            category = "RIDDLE",
+            answer = "کد گاوصندوق کلمه «متفاوت» بود!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۰: ورود به باشگاه خصوصی",
+            content = "دربان می‌گوید ۱۲ و مرد می‌گوید ۶... چرا وقتی به زن می‌گوید ۱۰ و او می‌گوید ۵ راه داده نمی‌شود؟",
+            category = "RIDDLE",
+            answer = "رمز، تعداد حروف کلمه‌ی عدد است (ده دو حرف دارد نه پنج حرف).",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۱: سرب مداد",
+            content = "من از یک معدن می‌آیم و همیشه با چوب احاطه می‌شوم، اما توسط همه دانش‌آموزان استفاده می‌شوم. من چیستم؟",
+            category = "RIDDLE",
+            answer = "مغزی یا سرب مداد (گرافیت)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۲: عکس عکاسی",
+            content = "زنی به شوهرش شلیک می‌کند و سپس او را ۵ دقیقه زیر آب نگه می‌دارد، اما بلافاصله با هم به شام می‌روند! چگونه ممکن است؟",
+            category = "RIDDLE",
+            answer = "او عکاس است! عکس شوهرش را گرفته، آن را ظاهر کرده و شسته است.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۳: نقشه جغرافیایی",
+            content = "من شهرهایی دارم اما خانه‌ای ندارم. کوه دارم اما درختی ندارم. دریا دارم اما آبی ندارم. من چیستم؟",
+            category = "RIDDLE",
+            answer = "نقشه جغرافیایی!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۴: عمر شمع",
+            content = "شما زندگی من را در ساعت اندازه‌گیری می‌کنید و من با تمام شدن به شما خدمت می‌کنم. من وقتی لاغرم سریعم و وقتی چاقم کندم. باد دشمن من است. من چیستم؟",
+            category = "RIDDLE",
+            answer = "شمع!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۵: پژواک و انعکاس صدا",
+            content = "من بدون دهان صحبت می‌کنم و بدون گوش می‌شنوم. بدنی ندارم اما با باد زنده می‌شوم. من چیستم؟",
+            category = "RIDDLE",
+            answer = "پژواک (بازتاب صدا)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۶: خواهران و برادران",
+            content = "در یک خانواده، یک دختر به اندازه خواهرش برادر دارد، اما هر برادر فقط نیمی از خواهرانش برادر دارد. چند خواهر و برادر در خانواده هستند؟",
+            category = "RIDDLE",
+            answer = "۴ خواهر و ۳ برادر!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۷: سکوت",
+            content = "آن چیست که به محض گفتن نامش، ناپدید می‌شود؟",
+            category = "RIDDLE",
+            answer = "سکوت!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۸: صفحه کلید (کیبورد)",
+            content = "من کلیدهای زیادی دارم اما هیچ قفلی را باز نمی‌کنم. فضای خالی (space) دارم اما هیچ اتاقی ندارم. می‌توان وارد (enter) من شد اما بیرون نرفت. من چیستم؟",
+            category = "RIDDLE",
+            answer = "صفحه کلید (کیبورد)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۹۹: چیستان و معما",
+            content = "من یک راز هستم، اما سرنخ‌هایی برای حل به شما داده‌ام. تا زمانی که مرا حل نکنید ذهن شما را درگیر می‌کنم. من چیستم؟",
+            category = "RIDDLE",
+            answer = "چیستان (معما)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۰: سن انسان",
+            content = "آن چیست که همیشه بالا می‌رود اما هیچ‌گاه پایین نمی‌آید؟",
+            category = "RIDDLE",
+            answer = "سن انسان!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۱: تخم‌مرغ",
+            content = "چه چیزی است که باید قبل از اینکه از آن استفاده کنید، آن را بشکنید؟",
+            category = "RIDDLE",
+            answer = "تخم مرغ!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۲: سقوط هواپیما بین بلژیک و فرانسه",
+            content = "اگر هواپیمایی دقیقاً روی مرز بین بلژیک و فرانسه سقوط کند، بازماندگان باید در کدام کشور دفن شوند؟",
+            category = "RIDDLE",
+            answer = "بازماندگان زنده هستند و نیازی به دفن شدن ندارند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۳: رئیس جمهور ۲۲ و ۲۴ آمریکا",
+            content = "رئیس‌جمهور دوره ۲۲ و ۲۴ آمریکا والدین یکسانی داشتند اما با یکدیگر برادر نبودند. چطور ممکن است؟",
+            category = "RIDDLE",
+            answer = "آن‌ها یک نفر بودند! (گرور کلیولند که دو دوره غیرمتوالی رئیس‌جمهور بود)",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۴: فردا",
+            content = "چه چیزی همیشه در راه است و می‌آید، ولی هرگز به امروز نمی‌رسد؟",
+            category = "RIDDLE",
+            answer = "فردا!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۵: سقوط در مرز آمریکا و کانادا",
+            content = "اگر هواپیما در مرز بین آمریکا و کانادا سقوط کند، بازماندگان را کجا دفن می‌کنند؟",
+            category = "RIDDLE",
+            answer = "بازماندگان زنده هستند و دفن نمی‌شوند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۶: برداشتن ۴ سیب",
+            content = "اگر در یک کاسه شش سیب وجود داشته باشد و چهار سیب از آن بردارید، چند سیب دارید؟",
+            category = "RIDDLE",
+            answer = "۴ سیب! (همان ۴ سیبی که برداشتید در دست شماست)",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۷: جهت حرکت دود قطار برقی",
+            content = "اگر یک قطار برقی با سرعت ۱۶۱ کیلومتر بر ساعت به سمت شمال حرکت کند و باد به سمت غرب بوزد، دود قطار به کدام سمت می‌رود؟",
+            category = "RIDDLE",
+            answer = "قطار برقی اصلاً دود ندارد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۸: ۲۸ روز ماه",
+            content = "چند ماه در سال ۲۸ روز دارند؟",
+            category = "RIDDLE",
+            answer = "همه ۱۲ ماه سال حداقل ۲۸ روز دارند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۰۹: حسابدار و وکیل",
+            content = "حسابدار گفت: «وکیل برادر من است»، ولی وکیل شهادت داد که هیچ برادری ندارد! چطور ممکن است؟",
+            category = "RIDDLE",
+            answer = "حسابدار یک زن (خواهر وکیل) بود!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۰: گوسفندان مزرعه عمو بیل",
+            content = "در مزرعه عمو بیل به جز هفت گوسفند، همه گوسفندان بر اثر بیماری تلف شدند. چند گوسفند زنده در مزرعه باقی مانده است؟",
+            category = "RIDDLE",
+            answer = "۷ گوسفند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۱: بالا و پایین رفتن ثابت",
+            content = "چه چیزی همیشه بالا و پایین می‌رود اما هیچ‌گاه از جایش تکان نمی‌خورد؟",
+            category = "RIDDLE",
+            answer = "پله!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۲: مرد کوتاه قد و آسانسور",
+            content = "مردی در طبقه صدم آپارتمان زندگی می‌کند. او روزهای آفتابی با آسانسور تا طبقه ۵۰ می‌رود و مابقی را پیاده بالا می‌رود، اما روزهای بارانی تا طبقه صدم با آسانسور می‌رود. چرا؟",
+            category = "RIDDLE",
+            answer = "قد او کوتاه است و دستش به دکمه ۱۰۰ نمی‌رسد؛ اما در روزهای بارانی با نوک چترش دکمه ۱۰۰ را فشار می‌دهد!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۳: جراح اورژانس و پسر",
+            content = "پسری را بعد از تصادف به اورژانس آوردند. جراح اورژانس گفت: «من نمی‌توانم او را عمل کنم، چون این پسرم است!» اما پدر پسر در تصادف فوت کرده بود. جراح چه نسبتی با او دارد؟",
+            category = "RIDDLE",
+            answer = "جراح، مادر پسر است!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۴: آتش‌سوزی در دو اتاق",
+            content = "در یک خانه هم‌زمان دو اتاق آتش می‌گیرد. پلیس‌ها ابتدا آتش کدام اتاق را خاموش می‌کنند؟",
+            category = "RIDDLE",
+            answer = "پلیس‌ها آتش خاموش نمی‌کنند، بلکه آتش‌نشان‌ها آتش را خاموش می‌کنند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۵: پای مبل و مردان",
+            content = "هشت مرد روی مبلی نشسته‌اند. ناگهان ۳ پای مبل می‌شکند و شش مرد فرار می‌کنند! چند پا روی مبل یا مربوط به مبل باقی می‌ماند؟",
+            category = "RIDDLE",
+            answer = "۵ پا (۴ پای دو مرد باقی‌مانده + ۱ پای سالمی که مبل دارد)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۶: اسم راننده اتوبوس",
+            content = "شما در حال رانندگی با یک اتوبوس شهری هستید. در ایستگاه اول ۵ نفر سوار می‌شوند و در ایستگاه دوم ۳ نفر پیاده می‌شوند... اسم راننده اتوبوس چیست؟",
+            category = "RIDDLE",
+            answer = "اسم خود شما! چون در ابتدای معما گفته شد «شما در حال رانندگی هستید».",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۷: تا کردن روزنامه از وسط",
+            content = "حداکثر تعداد دفعاتی که می‌توانید یک صفحه روزنامه را با دست دقیقاً از وسط تا کنید چقدر است؟",
+            category = "RIDDLE",
+            answer = "یک بار! زیرا دفعات بعد، روزنامه تا شده از وسطِ کلِ صفحه تا نمی‌شود، بلکه از وسطِ نصفه‌شده تا می‌شود.",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۸: مراحل رشد انسان",
+            content = "آن کیست که در ابتدای زندگی چهار پا دارد، سپس دو پا و در نهایت سه پا؟",
+            category = "RIDDLE",
+            answer = "انسان! (نوزادی روی چهار دست و پا می‌خزد، در جوانی روی دو پا راه می‌رود و در پیری با عصا ۳ پا دارد).",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۱۹: دیدن آن سوی دیوار",
+            content = "چه اختراعی به شما اجازه می‌دهد آن طرف دیوار را نگاه کنید؟",
+            category = "RIDDLE",
+            answer = "پنجره!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۰: قند",
+            content = "همراه چای است و همرنگ برف، هم طعم عسل است و هم بوی آب! آن چیست؟",
+            category = "RIDDLE",
+            answer = "قند!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۱: کلید برق",
+            content = "کدام کلید است که هیچ دری را باز نمی‌کند؟",
+            category = "RIDDLE",
+            answer = "کلید برق!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۲: پرکتاب‌ترین خانه",
+            content = "کدام خانه بیشترین کتاب‌ها را دارد؟",
+            category = "RIDDLE",
+            answer = "کتابخانه!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۳: دارا و ندار",
+            content = "دارا آن را ندارد و ندار آن را دارد؟",
+            category = "RIDDLE",
+            answer = "نقطه! (کلمه «ندار» نقطه دارد ولی «دارا» ندارد).",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۴: جایگاه حرف «ر»",
+            content = "آن چیست که در فرانسه، کره جنوبی، کره شمالی، عربستان، عراق و ترکمنستان دوم شده است اما در روسیه اول؟",
+            category = "RIDDLE",
+            answer = "حرف «ر»!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۵: مشترک آشپزخانه و خودرو",
+            content = "چیزی است که هم در آشپزخانه وجود دارد هم اتومبیل! آن چیست؟",
+            category = "RIDDLE",
+            answer = "گاز!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۶: حرف «ش»",
+            content = "در گوش و چشم هست ولی در دهان نیست! آن چیست؟",
+            category = "RIDDLE",
+            answer = "حرف «ش»!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۷: سوزن نابینا",
+            content = "یک چشم دارد اما نمی‌بیند! آن چیست؟",
+            category = "RIDDLE",
+            answer = "سوزن!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۸: چهارپایه بی حرکت",
+            content = "با وجود داشتن چهار پا، اما نمی‌تواند حرکت کند! آن چیست؟",
+            category = "RIDDLE",
+            answer = "چهارپایه (یا صندلی و میز)!",
+            readTimeMinutes = 1
+        ),
+        StoryItem(
+            title = "چیستان ۱۲۹: چراغ راهنمایی",
+            content = "آن چیست که سه چشم و یک پا دارد؟",
+            category = "RIDDLE",
+            answer = "چراغ راهنمایی و رانندگی!",
             readTimeMinutes = 1
         ),
 

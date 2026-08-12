@@ -113,17 +113,17 @@ fun OnlineMatchmakingOverlay(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black.copy(alpha = 0.88f))
+            .background(Color.Black.copy(alpha = 0.65f))
             .padding(20.dp),
         contentAlignment = Alignment.Center
     ) {
         Surface(
             shape = RoundedCornerShape(24.dp),
-            color = Color(0xFF0F172A),
+            color = Color(0xFF0F172A).copy(alpha = 0.75f),
             border = androidx.compose.foundation.BorderStroke(
                 width = 2.dp,
                 brush = Brush.horizontalGradient(
-                    listOf(Color(0xFF00F0FF), Color(0xFFD946EF), Color(0xFF00FF88))
+                    listOf(Color.White.copy(alpha = 0.9f), Color(0xFF38BDF8), Color.White.copy(alpha = 0.9f))
                 )
             ),
             modifier = Modifier.fillMaxWidth()

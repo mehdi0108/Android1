@@ -81,21 +81,8 @@ fun HomeScreen(
 
     var showExitDialog by remember { mutableStateOf(false) }
 
-    // Background linear gradient: Scenic Landscape Sky/Meadow when Glass mode, else Navy
-    val screenBackgroundBrush = if (userSettings.isGlassMode) {
-        if (isDark) DarkScenicLandscapeBrush else LightScenicLandscapeBrush
-    } else {
-        Brush.linearGradient(
-            colors = listOf(
-                Color(0xFF0F2B48), // Navy Blue at top
-                Color(0xFF08182A), // Darker Navy
-                Color(0xFF030913), // Deep Navy Black
-                Color(0xFF000000)  // Solid Black at bottom
-            ),
-            start = Offset(0f, 0f),
-            end = Offset(0f, Float.POSITIVE_INFINITY)
-        )
-    }
+    // Background linear gradient: Scenic Landscape Sky/Meadow Brush
+    val screenBackgroundBrush = if (isDark) DarkScenicLandscapeBrush else LightScenicLandscapeBrush
 
     Surface(
         modifier = Modifier
@@ -241,13 +228,13 @@ fun HomeScreen(
                         subtitle = "مشاهده جک‌ها، چیستان‌ها، داستان‌ها و دانستنی‌ها",
                         icon = Icons.Default.MenuBook,
                         isDark = isDark,
-                        isGlassMode = userSettings.isGlassMode,
-                        containerColor = if (isDark) Color(0xFF1E293B).copy(alpha = 0.9f) else Color.White.copy(alpha = 0.95f),
+                        isGlassMode = true,
+                        containerColor = if (isDark) Color(0xFF0F172A).copy(alpha = 0.45f) else Color.White.copy(alpha = 0.28f),
                         titleColor = if (isDark) Color.White else Color(0xFF0F172A),
-                        subtitleColor = if (isDark) Color(0xFF94A3B8) else Color(0xFF475569),
-                        iconBgColor = if (isDark) Color(0xFF0F172A) else Color(0xFFE0F2FE),
-                        iconTint = Color(0xFF0284C7),
-                        borderColor = if (isDark) Color(0xFF38BDF8).copy(alpha = 0.4f) else Color.White,
+                        subtitleColor = if (isDark) Color(0xFFE2E8F0) else Color(0xFF1E293B),
+                        iconBgColor = if (isDark) Color(0xFF0284C7).copy(alpha = 0.3f) else Color.White.copy(alpha = 0.5f),
+                        iconTint = Color(0xFF38BDF8),
+                        borderColor = Color.White.copy(alpha = 0.8f),
                         testTag = "enter_app_button",
                         onClick = onNavigateToContent
                     )
@@ -258,13 +245,13 @@ fun HomeScreen(
                         subtitle = "چیستان ۱ دقیقه‌ای، حدس کلمه، اسم و فامیل، مار و پله، منچ و دوز با جایزه سکه‌ای",
                         icon = Icons.Default.SportsEsports,
                         isDark = isDark,
-                        isGlassMode = userSettings.isGlassMode,
-                        containerColor = if (isDark) Color(0xFF1E293B).copy(alpha = 0.9f) else Color.White.copy(alpha = 0.95f),
+                        isGlassMode = true,
+                        containerColor = if (isDark) Color(0xFF0F172A).copy(alpha = 0.45f) else Color.White.copy(alpha = 0.28f),
                         titleColor = if (isDark) Color.White else Color(0xFF0F172A),
-                        subtitleColor = if (isDark) Color(0xFF94A3B8) else Color(0xFF475569),
-                        iconBgColor = if (isDark) Color(0xFF0F172A) else Color(0xFFFEF08A),
-                        iconTint = Color(0xFFCA8A04),
-                        borderColor = if (isDark) Color(0xFFEAB308).copy(alpha = 0.5f) else Color.White,
+                        subtitleColor = if (isDark) Color(0xFFE2E8F0) else Color(0xFF1E293B),
+                        iconBgColor = if (isDark) Color(0xFFCA8A04).copy(alpha = 0.3f) else Color.White.copy(alpha = 0.5f),
+                        iconTint = Color(0xFFFACC15),
+                        borderColor = Color.White.copy(alpha = 0.8f),
                         testTag = "quiz_games_button",
                         onClick = onNavigateToQuizGames
                     )
@@ -275,13 +262,13 @@ fun HomeScreen(
                         subtitle = "تغییر سایز فونت، نوع فونت، رنگ، تم و حالت شیشه‌ای",
                         icon = Icons.Default.Settings,
                         isDark = isDark,
-                        isGlassMode = userSettings.isGlassMode,
-                        containerColor = if (isDark) Color(0xFF1E293B).copy(alpha = 0.9f) else Color.White.copy(alpha = 0.95f),
+                        isGlassMode = true,
+                        containerColor = if (isDark) Color(0xFF0F172A).copy(alpha = 0.45f) else Color.White.copy(alpha = 0.28f),
                         titleColor = if (isDark) Color.White else Color(0xFF0F172A),
-                        subtitleColor = if (isDark) Color(0xFF94A3B8) else Color(0xFF475569),
-                        iconBgColor = if (isDark) Color(0xFF0F172A) else Color(0xFFF0F9FF),
-                        iconTint = Color(0xFF0369A1),
-                        borderColor = if (isDark) Color(0xFF38BDF8).copy(alpha = 0.4f) else Color.White,
+                        subtitleColor = if (isDark) Color(0xFFE2E8F0) else Color(0xFF1E293B),
+                        iconBgColor = if (isDark) Color(0xFF0369A1).copy(alpha = 0.3f) else Color.White.copy(alpha = 0.5f),
+                        iconTint = Color(0xFF38BDF8),
+                        borderColor = Color.White.copy(alpha = 0.8f),
                         testTag = "settings_button",
                         onClick = onNavigateToSettings
                     )
@@ -292,13 +279,13 @@ fun HomeScreen(
                         subtitle = "شناسنامه برنامه و راه ارتباطی با سازنده",
                         icon = Icons.Default.Info,
                         isDark = isDark,
-                        isGlassMode = userSettings.isGlassMode,
-                        containerColor = if (isDark) Color(0xFF1E293B).copy(alpha = 0.9f) else Color.White.copy(alpha = 0.95f),
+                        isGlassMode = true,
+                        containerColor = if (isDark) Color(0xFF0F172A).copy(alpha = 0.45f) else Color.White.copy(alpha = 0.28f),
                         titleColor = if (isDark) Color.White else Color(0xFF0F172A),
-                        subtitleColor = if (isDark) Color(0xFF94A3B8) else Color(0xFF475569),
-                        iconBgColor = if (isDark) Color(0xFF0F172A) else Color(0xFFF8FAFC),
-                        iconTint = if (isDark) Color(0xFF94A3B8) else Color(0xFF475569),
-                        borderColor = if (isDark) Color(0xFF38BDF8).copy(alpha = 0.4f) else Color.White,
+                        subtitleColor = if (isDark) Color(0xFFE2E8F0) else Color(0xFF1E293B),
+                        iconBgColor = if (isDark) Color(0xFF475569).copy(alpha = 0.3f) else Color.White.copy(alpha = 0.5f),
+                        iconTint = Color.White,
+                        borderColor = Color.White.copy(alpha = 0.8f),
                         testTag = "about_button",
                         onClick = onNavigateToAbout
                     )
