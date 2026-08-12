@@ -8,46 +8,39 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import com.example.ui.theme.THEME_DARK_GOLD
+import com.example.ui.theme.THEME_LIGHT_CYAN
 
-// Scenic Landscape Gradient Brush:
-// Upper 50%: Sky (آسمان - Azure to Bright Sky Blue & Atmospheric Glow)
-// Lower 50%: Meadow (دشت سبز - Fresh Grass Green to Lush Emerald Field)
-val LightScenicLandscapeBrush = Brush.verticalGradient(
+// iPhone Glassmorphism Mesh Backdrop Brush
+val IphoneGlassBackgroundBrush = Brush.verticalGradient(
     colorStops = arrayOf(
-        0.00f to Color(0xFF0284C7), // Sky Top: Deep Sky Azure
-        0.25f to Color(0xFF38BDF8), // Upper Sky: Bright Sky Blue
-        0.48f to Color(0xFFBAE6FD), // Horizon Sky: Soft Cyan Atmosphere
-        0.52f to Color(0xFF86EFAC), // Horizon Meadow: Fresh Soft Green
-        0.75f to Color(0xFF22C55E), // Lower Meadow: Vivid Grass Green
-        1.00f to Color(0xFF15803D)  // Meadow Bottom: Deep Lush Meadow Green
-    )
-)
-
-val DarkScenicLandscapeBrush = Brush.verticalGradient(
-    colorStops = arrayOf(
-        0.00f to Color(0xFF0F172A), // Dark Sky Top: Night Slate Blue
-        0.25f to Color(0xFF0369A1), // Upper Sky: Deep Azure Sky
-        0.48f to Color(0xFF0C4A6E), // Horizon Sky: Dusk Atmospheric Glow
-        0.52f to Color(0xFF064E3B), // Horizon Field: Deep Emerald Grass
-        0.75f to Color(0xFF14532D), // Lower Field: Forest Meadow Green
-        1.00f to Color(0xFF052E16)  // Meadow Bottom: Deep Lush Night Field
+        0.00f to Color(0xFF1E1B4B), // iOS Deep Indigo Sky
+        0.28f to Color(0xFF311B92), // Vivid Ambient Purple
+        0.60f to Color(0xFF0F172A), // Midnight Dark Slate
+        0.85f to Color(0xFF0369A1), // Soft Cyan Horizon
+        1.00f to Color(0xFF1E1B4B)  // iOS Bottom Accent
     )
 )
 
 @Composable
 fun ScenicGlassContainer(
+    themeMode: String = "IPHONE_GLASS",
     isGlassMode: Boolean = true,
     isDark: Boolean = true,
     modifier: Modifier = Modifier,
     content: @Composable BoxScope.() -> Unit
 ) {
-    val backgroundBrush = if (isDark) DarkScenicLandscapeBrush else LightScenicLandscapeBrush
+    val modifierWithBg = when (themeMode) {
+        THEME_LIGHT_CYAN -> modifier.fillMaxSize().background(Color(0xFFFFFFFF))
+        THEME_DARK_GOLD -> modifier.fillMaxSize().background(Color(0xFF090D16))
+        else -> modifier.fillMaxSize().background(IphoneGlassBackgroundBrush)
+    }
+
     Box(
-        modifier = modifier
-            .fillMaxSize()
-            .background(backgroundBrush)
+        modifier = modifierWithBg
     ) {
         content()
     }
 }
+
 

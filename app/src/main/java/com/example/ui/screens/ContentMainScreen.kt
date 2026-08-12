@@ -81,6 +81,7 @@ import com.example.data.model.StoryItem
 import com.example.ui.components.CoinBalanceHeaderBadge
 import com.example.ui.components.ScenicGlassContainer
 import com.example.ui.components.WhiteBorderCard
+import com.example.ui.theme.THEME_LIGHT_CYAN
 import com.example.viewmodel.AppViewModel
 
 data class CategoryInfo(
@@ -92,6 +93,7 @@ data class CategoryInfo(
 )
 
 val CATEGORY_LIST = listOf(
+    CategoryInfo("EDUCATIONAL", "داستان‌های آموزنده", "داستان‌های کوتاه پندآموز، آموزنده و هزار و یک شب", Icons.Default.MenuBook, Color(0xFF2563EB)),
     CategoryInfo("NASRUDDIN", "داستان ملانصرالدین", "داستان‌های طنزآمیز و پندآموز ملانصرالدین", Icons.Default.Psychology, Color(0xFF0284C7)),
     CategoryInfo("SHAHNAMEH", "داستان شاهنامه", "داستان‌های حماسی و ماندگار شاهنامه فردوسی", Icons.Default.AutoAwesome, Color(0xFF7C3AED)),
     CategoryInfo("JOKE", "جک و لطیفه", "لطیفه‌ها و شوخی‌های خنده‌دار و شاد", Icons.Default.SentimentVerySatisfied, Color(0xFF059669)),
@@ -113,13 +115,14 @@ fun ContentMainScreen(
     val searchQuery by viewModel.searchQuery.collectAsStateWithLifecycle()
     val userSettings by viewModel.userSettings.collectAsStateWithLifecycle()
 
-    val isDark = userSettings.themeMode == "DARK"
+    val activeTheme = userSettings.themeMode
+    val isDark = activeTheme != THEME_LIGHT_CYAN
     var isSearchOpen by remember { mutableStateOf(false) }
 
     ScenicGlassContainer(
-        isGlassMode = userSettings.isGlassMode,
-        isDark = isDark
+        themeMode = activeTheme
     ) {
+
         Scaffold(
             topBar = {
                 TopAppBar(
@@ -231,21 +234,6 @@ fun ContentMainScreen(
                             Icon(
                                 imageVector = Icons.Default.Search,
                                 contentDescription = "جستجو",
-                                tint = Color.White
-                            )
-                        }
-
-                        // Theme Toggle
-                        IconButton(
-                            onClick = {
-                                val nextMode = if (isDark) "LIGHT" else "DARK"
-                                viewModel.updateThemeMode(nextMode)
-                            },
-                            modifier = Modifier.testTag("theme_toggle_button")
-                        ) {
-                            Icon(
-                                imageVector = if (isDark) Icons.Default.LightMode else Icons.Default.DarkMode,
-                                contentDescription = "حالت شب / روز",
                                 tint = Color.White
                             )
                         }

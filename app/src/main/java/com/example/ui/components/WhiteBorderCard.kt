@@ -16,27 +16,15 @@ import androidx.compose.ui.unit.dp
 fun WhiteBorderCard(
     modifier: Modifier = Modifier,
     onClick: (() -> Unit)? = null,
-    borderColor: Color = Color.White.copy(alpha = 0.8f),
+    borderColor: Color? = null,
     borderWidth: Dp = 1.5.dp,
-    containerColor: Color = Color.White.copy(alpha = 0.22f),
+    containerColor: Color? = null,
     isGlassMode: Boolean = true,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    // Frosted Glass (حالت مات شیشه‌ای) Effect
-    val finalContainerColor = if (isGlassMode) {
-        if (containerColor == MaterialTheme.colorScheme.surface) Color.White.copy(alpha = 0.22f) else containerColor
-    } else {
-        containerColor
-    }
-
-    val finalBorderColor = if (isGlassMode) {
-        if (borderColor == MaterialTheme.colorScheme.outline) Color.White.copy(alpha = 0.8f) else borderColor
-    } else {
-        borderColor
-    }
-
-    val finalBorderWidth = if (isGlassMode) 1.5.dp else borderWidth
-    val shape = RoundedCornerShape(20.dp)
+    val finalContainerColor = containerColor ?: MaterialTheme.colorScheme.surface
+    val finalBorderColor = borderColor ?: MaterialTheme.colorScheme.outline
+    val shape = RoundedCornerShape(22.dp)
 
     if (onClick != null) {
         Card(
@@ -44,7 +32,7 @@ fun WhiteBorderCard(
             modifier = modifier,
             shape = shape,
             colors = CardDefaults.cardColors(containerColor = finalContainerColor),
-            border = BorderStroke(finalBorderWidth, finalBorderColor),
+            border = BorderStroke(borderWidth, finalBorderColor),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
             content = content
         )
@@ -53,9 +41,10 @@ fun WhiteBorderCard(
             modifier = modifier,
             shape = shape,
             colors = CardDefaults.cardColors(containerColor = finalContainerColor),
-            border = BorderStroke(finalBorderWidth, finalBorderColor),
+            border = BorderStroke(borderWidth, finalBorderColor),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
             content = content
         )
     }
 }
+

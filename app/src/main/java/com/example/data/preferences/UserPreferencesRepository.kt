@@ -9,12 +9,13 @@ import kotlinx.coroutines.flow.asStateFlow
 data class UserSettings(
     val fontSizeSp: Float = 18f,
     val fontFamily: String = "vazir", // "vazir", "sans", "serif", "monospace", "nastaliq"
-    val fontColorHex: String = "#FFFFFF",
-    val themeMode: String = "DARK", // "LIGHT", "DARK" (Default to DARK mode)
-    val isGlassMode: Boolean = true, // Default to true (Frosted Glassmorphism mode in dark)
-    val coins: Int = 150, // Coins balance
-    val lastDailyClaimTime: Long = 0L // Timestamp of last 15-coin claim
+    val fontColorHex: String = "", // empty = default for selected theme
+    val themeMode: String = "IPHONE_GLASS", // "LIGHT_CYAN", "DARK_GOLD", "IPHONE_GLASS"
+    val isGlassMode: Boolean = true,
+    val coins: Int = 0,
+    val lastDailyClaimTime: Long = 0L
 )
+
 
 class UserPreferencesRepository(context: Context) {
     private val prefs: SharedPreferences =
@@ -24,69 +25,17 @@ class UserPreferencesRepository(context: Context) {
     val settings: StateFlow<UserSettings> = _settings.asStateFlow()
 
     private fun loadSettings(): UserSettings {
-        val themeMode = prefs.getString("theme_mode", "DARK") ?: "DARK"
-        val fontColorDefault = if (themeMode == "DARK") "#FFFFFF" else "#0F172A"
+        var themeMode = prefs.getString("theme_mode", "IPHONE_GLASS") ?: "IPHONE_GLASS"
+        if (themeMode == "LIGHT") themeMode = "LIGHT_CYAN"
+        if (themeMode == "DARK") themeMode = "DARK_GOLD"
+
         return UserSettings(
             fontSizeSp = prefs.getFloat("font_size", 18f),
             fontFamily = prefs.getString("font_family", "vazir") ?: "vazir",
-            fontColorHex = prefs.getString("font_color", fontColorDefault) ?: fontColorDefault,
+            fontColorHex = prefs.getString("font_color", "") ?: "",
             themeMode = themeMode,
-            isGlassMode = prefs.getBoolean("glass_mode", true),
-            coins = prefs.getInt("user_coins", 150),
-            lastDailyClaimTime = prefs.getLong("last_daily_claim_time", 0L)
+            isGlassMode = prefs.getBoolean("glass_mode", true)
         )
-    }
-
-    fun addCoins(amount: Int) {
-        val current = _settings.value.coins
-        val updated = current + amount
-        prefs.edit().putInt("user_coins", updated).apply()
-        _settings.value = _settings.value.copy(coins = updated)
-    }
-
-    fun spendCoins(amount: Int): Boolean {
-        val current = _settings.value.coins
-        if (current >= amount) {
-            val updated = current - amount
-            prefs.edit().putInt("user_coins", updated).apply()
-            _settings.value = _settings.value.copy(coins = updated)
-            return true
-        }
-        return false
-    }
-
-    fun canClaimDailyReward(): Boolean {
-        val lastClaim = _settings.value.lastDailyClaimTime
-        if (lastClaim == 0L) return true
-        val diff = System.currentTimeMillis() - lastClaim
-        return diff >= 24 * 60 * 60 * 1000
-    }
-
-    fun getRemainingTimeMillis(): Long {
-        val lastClaim = _settings.value.lastDailyClaimTime
-        if (lastClaim == 0L) return 0L
-        val diff = System.currentTimeMillis() - lastClaim
-        val totalMillis = 24 * 60 * 60 * 1000L
-        val remaining = totalMillis - diff
-        return if (remaining > 0L) remaining else 0L
-    }
-
-    fun claimDailyReward(): Boolean {
-        if (canClaimDailyReward()) {
-            val now = System.currentTimeMillis()
-            val current = _settings.value.coins
-            val updated = current + 15
-            prefs.edit()
-                .putInt("user_coins", updated)
-                .putLong("last_daily_claim_time", now)
-                .apply()
-            _settings.value = _settings.value.copy(
-                coins = updated,
-                lastDailyClaimTime = now
-            )
-            return true
-        }
-        return false
     }
 
     fun updateFontSize(size: Float) {
@@ -113,4 +62,10 @@ class UserPreferencesRepository(context: Context) {
         prefs.edit().putBoolean("glass_mode", enabled).apply()
         _settings.value = _settings.value.copy(isGlassMode = enabled)
     }
+
+    fun resetToDefaults() {
+        prefs.edit().clear().apply()
+        _settings.value = UserSettings()
+    }
 }
+

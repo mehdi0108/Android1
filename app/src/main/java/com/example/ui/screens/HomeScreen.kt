@@ -26,8 +26,13 @@ import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.MenuBook
+import androidx.compose.material.icons.filled.Palette
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.SportsEsports
+import com.example.ui.components.ScenicGlassContainer
+import com.example.ui.theme.THEME_DARK_GOLD
+import com.example.ui.theme.THEME_IPHONE_GLASS
+import com.example.ui.theme.THEME_LIGHT_CYAN
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -46,9 +51,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -61,8 +69,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.R
 import com.example.ui.components.CoinBalanceHeaderBadge
-import com.example.ui.components.DarkScenicLandscapeBrush
-import com.example.ui.components.LightScenicLandscapeBrush
 import com.example.ui.components.WhiteBorderCard
 import com.example.viewmodel.AppViewModel
 
@@ -72,28 +78,21 @@ fun HomeScreen(
     onNavigateToContent: () -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToAbout: () -> Unit,
-    onNavigateToQuizGames: () -> Unit
+    onNavigateToQuizGames: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val activity = context as? Activity
     val userSettings by viewModel.userSettings.collectAsStateWithLifecycle()
-    val isDark = userSettings.themeMode == "DARK"
+    val activeTheme = userSettings.themeMode
+    val isDark = activeTheme != THEME_LIGHT_CYAN
 
     var showExitDialog by remember { mutableStateOf(false) }
 
-    // Background linear gradient: Scenic Landscape Sky/Meadow Brush
-    val screenBackgroundBrush = if (isDark) DarkScenicLandscapeBrush else LightScenicLandscapeBrush
-
-    Surface(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(screenBackgroundBrush),
-        color = Color.Transparent
+    ScenicGlassContainer(
+        themeMode = activeTheme
     ) {
         Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(screenBackgroundBrush)
+            modifier = Modifier.fillMaxSize()
         ) {
             Column(
                 modifier = Modifier
@@ -103,7 +102,7 @@ fun HomeScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
-                // Top Action Bar: Theme Switcher Toggle & Coin Balance Badge
+                // Top Action Bar: Theme Switcher Toggle (Cycles through 3 Themes)
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -115,45 +114,52 @@ fun HomeScreen(
                     ) {
                         IconButton(
                             onClick = {
-                                val nextMode = if (isDark) "LIGHT" else "DARK"
+                                val nextMode = when (activeTheme) {
+                                    THEME_LIGHT_CYAN -> THEME_DARK_GOLD
+                                    THEME_DARK_GOLD -> THEME_IPHONE_GLASS
+                                    else -> THEME_LIGHT_CYAN
+                                }
                                 viewModel.updateThemeMode(nextMode)
-                                val msg = if (nextMode == "DARK") "تم شب فعال شد" else "تم روز فعال شد"
+                                val msg = when (nextMode) {
+                                    THEME_LIGHT_CYAN -> "تم سفید و آبی فیروزه‌ای فعال شد 🩵"
+                                    THEME_DARK_GOLD -> "تم مشکی و طلایی فعال شد 🌙"
+                                    else -> "تم شیشه‌ای آیفون فعال شد 📱✨"
+                                }
                                 Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
                             },
                             modifier = Modifier
                                 .clip(CircleShape)
-                                .background(Color.White.copy(alpha = 0.2f))
+                                .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.2f))
                                 .testTag("home_theme_toggle")
                         ) {
                             Icon(
-                                imageVector = if (isDark) Icons.Default.LightMode else Icons.Default.DarkMode,
+                                imageVector = Icons.Default.Palette,
                                 contentDescription = "تغییر تم",
-                                tint = Color.White
+                                tint = MaterialTheme.colorScheme.primary
                             )
                         }
 
                         Box(
                             modifier = Modifier
                                 .clip(RoundedCornerShape(12.dp))
-                                .background(Color.White.copy(alpha = 0.15f))
+                                .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
                                 .padding(horizontal = 10.dp, vertical = 6.dp)
                         ) {
+                            val themeLabel = when (activeTheme) {
+                                THEME_LIGHT_CYAN -> "سفید و آبی 🩵"
+                                THEME_DARK_GOLD -> "مشکی و طلایی 🌙"
+                                else -> "آیفون شیشه‌ای 📱"
+                            }
                             Text(
-                                text = if (isDark) "حالت شب" else "حالت روز",
-                                color = Color.White,
+                                text = themeLabel,
+                                color = MaterialTheme.colorScheme.onSurface,
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Medium
                             )
                         }
                     }
-
-                    // Persistent Coin Balance Header Indicator
-                    CoinBalanceHeaderBadge(
-                        viewModel = viewModel,
-                        coins = userSettings.coins,
-                        isDark = isDark
-                    )
                 }
+
 
                 Spacer(modifier = Modifier.height(12.dp))
 
@@ -195,21 +201,32 @@ fun HomeScreen(
                     Text(
                         text = "دنیای سرگرمی",
                         style = MaterialTheme.typography.headlineLarge.copy(
-                            fontWeight = FontWeight.ExtraBold,
-                            color = Color(0xFF38BDF8),
-                            fontSize = 32.sp
+                            fontWeight = FontWeight.Black,
+                            color = MaterialTheme.colorScheme.primary,
+                            fontSize = 34.sp,
+                            shadow = Shadow(
+                                color = Color.Black.copy(alpha = 0.6f),
+                                offset = Offset(2f, 4f),
+                                blurRadius = 8f
+                            )
                         ),
                         textAlign = TextAlign.Center
                     )
 
-                    Spacer(modifier = Modifier.height(8.dp))
+                    Spacer(modifier = Modifier.height(10.dp))
 
                     Text(
                         text = "مجموعه‌ای خنده‌دار، سرگرم‌کننده و علمی با داستان‌ها و دانستنی‌های جذاب",
                         style = MaterialTheme.typography.bodyLarge.copy(
-                            color = Color(0xFFCBD5E1),
-                            fontSize = 14.sp,
-                            lineHeight = 20.sp
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onSurface,
+                            fontSize = 15.sp,
+                            lineHeight = 22.sp,
+                            shadow = Shadow(
+                                color = Color.Black.copy(alpha = 0.4f),
+                                offset = Offset(1f, 2f),
+                                blurRadius = 4f
+                            )
                         ),
                         textAlign = TextAlign.Center
                     )
@@ -237,23 +254,6 @@ fun HomeScreen(
                         borderColor = Color.White.copy(alpha = 0.8f),
                         testTag = "enter_app_button",
                         onClick = onNavigateToContent
-                    )
-
-                    // Option 2: مسابقه آنلاین و بازی‌ها
-                    MenuOptionCard(
-                        title = "مسابقه آنلاین و بازی‌ها 🎮",
-                        subtitle = "چیستان ۱ دقیقه‌ای، حدس کلمه، اسم و فامیل، مار و پله، منچ و دوز با جایزه سکه‌ای",
-                        icon = Icons.Default.SportsEsports,
-                        isDark = isDark,
-                        isGlassMode = true,
-                        containerColor = if (isDark) Color(0xFF0F172A).copy(alpha = 0.45f) else Color.White.copy(alpha = 0.28f),
-                        titleColor = if (isDark) Color.White else Color(0xFF0F172A),
-                        subtitleColor = if (isDark) Color(0xFFE2E8F0) else Color(0xFF1E293B),
-                        iconBgColor = if (isDark) Color(0xFFCA8A04).copy(alpha = 0.3f) else Color.White.copy(alpha = 0.5f),
-                        iconTint = Color(0xFFFACC15),
-                        borderColor = Color.White.copy(alpha = 0.8f),
-                        testTag = "quiz_games_button",
-                        onClick = onNavigateToQuizGames
                     )
 
                     // Option 2: تنظیمات
@@ -291,37 +291,51 @@ fun HomeScreen(
                     )
                 }
 
-                Spacer(modifier = Modifier.height(32.dp))
+                Spacer(modifier = Modifier.height(28.dp))
 
-                // Option 4: خروج از برنامه
-                OutlinedButton(
-                    onClick = { showExitDialog = true },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(54.dp)
-                        .testTag("exit_app_button"),
-                    shape = RoundedCornerShape(16.dp),
-                    colors = ButtonDefaults.outlinedButtonColors(
-                        contentColor = Color(0xFFEF4444)
-                    ),
-                    border = androidx.compose.foundation.BorderStroke(1.5.dp, Color(0xFFEF4444).copy(alpha = 0.6f))
+                // Option 4: دکمه گرد خروج از برنامه
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center,
+                    modifier = Modifier.padding(vertical = 4.dp)
                 ) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.Center
+                    Box(
+                        modifier = Modifier
+                            .size(64.dp)
+                            .clip(CircleShape)
+                            .background(
+                                Brush.linearGradient(
+                                    colors = listOf(
+                                        Color(0xFFEF4444),
+                                        Color(0xFF991B1B)
+                                    )
+                                )
+                            )
+                            .border(
+                                width = 2.dp,
+                                color = Color.White.copy(alpha = 0.85f),
+                                shape = CircleShape
+                            )
+                            .clickable { showExitDialog = true }
+                            .testTag("exit_app_button"),
+                        contentAlignment = Alignment.Center
                     ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ExitToApp,
-                            contentDescription = "خروج",
-                            modifier = Modifier.size(22.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text(
-                            text = "خروج از برنامه",
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 16.sp
+                            contentDescription = "خروج از برنامه",
+                            tint = Color.White,
+                            modifier = Modifier.size(28.dp)
                         )
                     }
+
+                    Spacer(modifier = Modifier.height(6.dp))
+
+                    Text(
+                        text = "خروج از برنامه",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.85f)
+                    )
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))

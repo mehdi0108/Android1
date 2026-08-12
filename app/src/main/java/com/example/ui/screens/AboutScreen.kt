@@ -62,6 +62,7 @@ import com.example.R
 import com.example.ui.components.CoinBalanceHeaderBadge
 import com.example.ui.components.ScenicGlassContainer
 import com.example.ui.components.WhiteBorderCard
+import com.example.ui.theme.THEME_LIGHT_CYAN
 import com.example.viewmodel.AppViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -78,12 +79,13 @@ fun AboutScreen(
     val instagramHandle = "Mehdi.r0181"
     val instagramUrl = "https://instagram.com/Mehdi.r0181"
 
-    val isDark = userSettings?.themeMode == "DARK"
+    val activeTheme = userSettings?.themeMode ?: "IPHONE_GLASS"
+    val isDark = activeTheme != THEME_LIGHT_CYAN
 
     ScenicGlassContainer(
-        isGlassMode = isGlassMode,
-        isDark = isDark
+        themeMode = activeTheme
     ) {
+
         Scaffold(
             topBar = {
                 TopAppBar(

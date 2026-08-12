@@ -108,34 +108,22 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
     fun updateThemeMode(mode: String) {
         userPrefsRepository.updateThemeMode(mode)
-        if (mode == "DARK") {
-            userPrefsRepository.updateFontColor("#FFFFFF")
-        } else if (mode == "LIGHT" && userSettings.value.fontColorHex.equals("#FFFFFF", ignoreCase = true)) {
-            userPrefsRepository.updateFontColor("#0F172A")
-        }
+        userPrefsRepository.updateFontColor("") // reset font color override so theme defaults apply
     }
 
     fun updateGlassMode(enabled: Boolean) {
         userPrefsRepository.updateGlassMode(enabled)
     }
 
-    fun addCoins(amount: Int) {
-        userPrefsRepository.addCoins(amount)
+    fun resetSettings() {
+        userPrefsRepository.resetToDefaults()
     }
 
-    fun spendCoins(amount: Int): Boolean {
-        return userPrefsRepository.spendCoins(amount)
-    }
-
-    fun canClaimDailyReward(): Boolean {
-        return userPrefsRepository.canClaimDailyReward()
-    }
-
-    fun getRemainingClaimTimeMillis(): Long {
-        return userPrefsRepository.getRemainingTimeMillis()
-    }
-
-    fun claimDailyReward(): Boolean {
-        return userPrefsRepository.claimDailyReward()
-    }
+    fun addCoins(amount: Int) {}
+    fun spendCoins(amount: Int): Boolean = true
+    fun canClaimDailyReward(): Boolean = false
+    fun getRemainingClaimTimeMillis(): Long = 0L
+    fun claimDailyReward(): Boolean = true
 }
+
+

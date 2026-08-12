@@ -28,12 +28,12 @@ enum class ScreenRoute {
 @Composable
 fun AppNavigation(viewModel: AppViewModel) {
     val userSettings by viewModel.userSettings.collectAsStateWithLifecycle()
-    val isDark = userSettings.themeMode == "DARK"
 
     var currentScreen by remember { mutableStateOf(ScreenRoute.HOME) }
     var selectedStoryId by remember { mutableIntStateOf(-1) }
 
-    AppTheme(isDarkTheme = isDark) {
+    AppTheme(themeMode = userSettings.themeMode) {
+
         when (currentScreen) {
             ScreenRoute.HOME -> {
                 HomeScreen(

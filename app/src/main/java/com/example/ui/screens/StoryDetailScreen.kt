@@ -1,16 +1,14 @@
 package com.example.ui.screens
 
-import android.app.Activity
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.ContextWrapper
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.slideInVertically
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -36,10 +34,7 @@ import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Lightbulb
-import androidx.compose.material.icons.filled.ScreenRotation
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.filled.StayCurrentLandscape
-import androidx.compose.material.icons.filled.StayCurrentPortrait
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -48,12 +43,10 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -62,18 +55,22 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.ui.components.CoinBalanceHeaderBadge
+import com.example.R
 import com.example.ui.components.ScenicGlassContainer
 import com.example.ui.components.WhiteBorderCard
 import com.example.ui.theme.FontUtils
+import com.example.ui.theme.THEME_LIGHT_CYAN
 import com.example.viewmodel.AppViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -89,23 +86,6 @@ fun StoryDetailScreen(
     val userSettings by viewModel.userSettings.collectAsStateWithLifecycle()
 
     var showAnswer by remember { mutableStateOf(false) }
-    var isLandscape by remember { mutableStateOf(false) }
-
-    val activity = remember(context) { context.findActivity() }
-
-    LaunchedEffect(isLandscape) {
-        activity?.requestedOrientation = if (isLandscape) {
-            ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-        } else {
-            ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        }
-    }
-
-    DisposableEffect(Unit) {
-        onDispose {
-            activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
-        }
-    }
 
     LaunchedEffect(storyId) {
         viewModel.loadStoryDetail(storyId)
@@ -120,221 +100,201 @@ fun StoryDetailScreen(
         defaultColor = MaterialTheme.colorScheme.onSurface
     )
 
-    val isDark = userSettings.themeMode == "DARK"
+    val activeTheme = userSettings.themeMode
 
     ScenicGlassContainer(
-        isGlassMode = userSettings.isGlassMode,
-        isDark = isDark
+        themeMode = activeTheme
     ) {
         Scaffold(
             topBar = {
-            TopAppBar(
-                title = {
-                    Text(
-                        text = story?.title ?: "جزئیات متن",
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 17.sp,
-                        maxLines = 1
-                    )
-                },
-                navigationIcon = {
-                    IconButton(
-                        onClick = onBack,
-                        modifier = Modifier.testTag("detail_back_button")
-                    ) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "بازگشت"
+                TopAppBar(
+                    title = {
+                        Text(
+                            text = story?.title ?: "جزئیات متن",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 17.sp,
+                            maxLines = 1
                         )
-                    }
-                },
-                actions = {
-                    CoinBalanceHeaderBadge(
-                        viewModel = viewModel,
-                        coins = userSettings.coins,
-                        isDark = isDark
-                    )
-
-                    Spacer(modifier = Modifier.width(4.dp))
-
-                    IconButton(
-                        onClick = {
-                            isLandscape = !isLandscape
-                            val msg = if (isLandscape) "حالت افقی فعال شد" else "حالت عمودی فعال شد"
-                            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
-                        },
-                        modifier = Modifier.testTag("detail_orientation_button")
-                    ) {
-                        Icon(
-                            imageVector = if (isLandscape) Icons.Default.StayCurrentLandscape else Icons.Default.StayCurrentPortrait,
-                            contentDescription = "چرخش صفحه (عمودی/افقی)"
-                        )
-                    }
-                    if (story != null) {
+                    },
+                    navigationIcon = {
                         IconButton(
-                            onClick = { viewModel.toggleFavorite(story) },
-                            modifier = Modifier.testTag("detail_favorite_button")
+                            onClick = onBack,
+                            modifier = Modifier.testTag("detail_back_button")
                         ) {
                             Icon(
-                                imageVector = if (story.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
-                                contentDescription = "علاقه‌مندی",
-                                tint = if (story.isFavorite) Color(0xFFE11D48) else Color.White
+                                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                                contentDescription = "بازگشت"
                             )
                         }
-                        IconButton(
-                            onClick = {
-                                shareText(context, story.title, story.content)
-                            },
-                            modifier = Modifier.testTag("detail_share_button")
-                        ) {
-                            Icon(
-                                imageVector = Icons.Default.Share,
-                                contentDescription = "اشتراک‌گذاری"
-                            )
+                    },
+                    actions = {
+                        if (story != null) {
+                            IconButton(
+                                onClick = { viewModel.toggleFavorite(story) },
+                                modifier = Modifier.testTag("detail_favorite_button")
+                            ) {
+                                Icon(
+                                    imageVector = if (story.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                                    contentDescription = "علاقه‌مندی",
+                                    tint = if (story.isFavorite) Color(0xFFE11D48) else Color.White
+                                )
+                            }
+                            IconButton(
+                                onClick = {
+                                    shareText(context, story.title, story.content)
+                                },
+                                modifier = Modifier.testTag("detail_share_button")
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Share,
+                                    contentDescription = "اشتراک‌گذاری"
+                                )
+                            }
                         }
-                    }
-                },
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = if (userSettings.isGlassMode) Color.White.copy(alpha = 0.22f) else MaterialTheme.colorScheme.primary,
-                    titleContentColor = Color.White,
-                    navigationIconContentColor = Color.White,
-                    actionIconContentColor = Color.White
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = if (userSettings.isGlassMode) Color.White.copy(alpha = 0.22f) else MaterialTheme.colorScheme.primary,
+                        titleContentColor = Color.White,
+                        navigationIconContentColor = Color.White,
+                        actionIconContentColor = Color.White
+                    )
                 )
-            )
-        },
-        bottomBar = {
-            if (story != null && allStories.isNotEmpty()) {
+            },
+            containerColor = if (userSettings.isGlassMode) Color.Transparent else MaterialTheme.colorScheme.background
+        ) { paddingValues ->
+            if (story == null) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(paddingValues),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(text = "در حال بارگذاری...")
+                }
+            } else {
                 val currentIndex = allStories.indexOfFirst { it.id == story.id }
                 val prevStory = if (currentIndex > 0) allStories[currentIndex - 1] else null
                 val nextStory = if (currentIndex in 0 until allStories.size - 1) allStories[currentIndex + 1] else null
 
-                Surface(
-                    color = if (userSettings.isGlassMode) Color.White.copy(alpha = 0.25f) else MaterialTheme.colorScheme.surface,
-                    tonalElevation = if (userSettings.isGlassMode) 1.dp else 8.dp,
-                    border = if (userSettings.isGlassMode) androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.8f)) else androidx.compose.foundation.BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(paddingValues)
+                        .verticalScroll(rememberScrollState())
+                        .padding(16.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
                 ) {
+                    // Center Image section with Next and Previous buttons beside it
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 16.dp, vertical = 8.dp),
+                            .padding(bottom = 16.dp),
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
+                        // Previous Button (قبلی)
                         OutlinedButton(
-                            onClick = {
-                                prevStory?.let { viewModel.loadStoryDetail(it.id) }
-                            },
+                            onClick = { prevStory?.let { viewModel.loadStoryDetail(it.id) } },
                             enabled = prevStory != null,
-                            shape = RoundedCornerShape(12.dp)
+                            shape = RoundedCornerShape(14.dp),
+                            modifier = Modifier
+                                .weight(1f)
+                                .height(46.dp)
+                                .testTag("prev_story_button"),
+                            contentPadding = PaddingValues(horizontal = 4.dp)
                         ) {
-                            Row(verticalAlignment = Alignment.CenterVertically) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.Center
+                            ) {
                                 Icon(
                                     imageVector = Icons.AutoMirrored.Filled.NavigateNext,
-                                    contentDescription = "قبلی"
+                                    contentDescription = "قبلی",
+                                    modifier = Modifier.size(20.dp)
                                 )
-                                Text("قبلی")
+                                Spacer(modifier = Modifier.width(2.dp))
+                                Text("قبلی", fontWeight = FontWeight.Bold, fontSize = 13.sp)
                             }
                         }
 
+                        Spacer(modifier = Modifier.width(10.dp))
+
+                        // Middle Image Badge (تصویر وسط صفحه)
+                        Box(
+                            modifier = Modifier
+                                .size(88.dp)
+                                .clip(CircleShape)
+                                .background(
+                                    Brush.linearGradient(
+                                        colors = listOf(Color(0xFF38BDF8), Color(0xFF0284C7))
+                                    )
+                                )
+                                .padding(3.dp)
+                                .clip(CircleShape)
+                                .background(Color.White)
+                                .padding(2.dp)
+                                .clip(CircleShape),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.app_icon_fg),
+                                contentDescription = "تصویر داستان",
+                                modifier = Modifier.fillMaxSize(),
+                                contentScale = ContentScale.Crop
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.width(10.dp))
+
+                        // Next Button (بعدی)
                         Button(
-                            onClick = {
-                                copyToClipboard(context, story.title, story.content)
-                            },
-                            colors = ButtonDefaults.buttonColors(
-                                containerColor = MaterialTheme.colorScheme.primaryContainer,
-                                contentColor = MaterialTheme.colorScheme.onPrimaryContainer
-                            ),
-                            shape = RoundedCornerShape(12.dp)
-                        ) {
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Icon(
-                                    imageVector = Icons.Default.ContentCopy,
-                                    contentDescription = "کپی",
-                                    modifier = Modifier.size(16.dp)
-                                )
-                                Spacer(modifier = Modifier.width(6.dp))
-                                Text("کپی متن")
-                            }
-                        }
-
-                        OutlinedButton(
-                            onClick = {
-                                nextStory?.let { viewModel.loadStoryDetail(it.id) }
-                            },
+                            onClick = { nextStory?.let { viewModel.loadStoryDetail(it.id) } },
                             enabled = nextStory != null,
-                            shape = RoundedCornerShape(12.dp)
+                            shape = RoundedCornerShape(14.dp),
+                            modifier = Modifier
+                                .weight(1f)
+                                .height(46.dp)
+                                .testTag("next_story_button"),
+                            contentPadding = PaddingValues(horizontal = 4.dp)
                         ) {
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Text("بعدی")
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.Center
+                            ) {
+                                Text("بعدی", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                                Spacer(modifier = Modifier.width(2.dp))
                                 Icon(
                                     imageVector = Icons.AutoMirrored.Filled.NavigateBefore,
-                                    contentDescription = "بعدی"
+                                    contentDescription = "بعدی",
+                                    modifier = Modifier.size(20.dp)
                                 )
                             }
                         }
                     }
-                }
-            }
-        },
-        containerColor = if (userSettings.isGlassMode) Color.Transparent else MaterialTheme.colorScheme.background
-    ) { paddingValues ->
-        if (story == null) {
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(paddingValues),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(text = "در حال بارگذاری...")
-            }
-        } else {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
-                    .verticalScroll(rememberScrollState())
-                    .padding(16.dp)
-            ) {
-                WhiteBorderCard(
-                    modifier = Modifier.fillMaxWidth(),
-                    containerColor = MaterialTheme.colorScheme.surface,
-                    borderColor = MaterialTheme.colorScheme.outline,
-                    borderWidth = 2.dp,
-                    isGlassMode = userSettings.isGlassMode
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(20.dp)
+
+                    // Story Text Card Container (کادر نوشته)
+                    WhiteBorderCard(
+                        modifier = Modifier.fillMaxWidth(),
+                        containerColor = MaterialTheme.colorScheme.surface,
+                        borderColor = MaterialTheme.colorScheme.outline,
+                        borderWidth = 2.dp,
+                        isGlassMode = userSettings.isGlassMode
                     ) {
-                        // Title
-                        Text(
-                            text = story.title,
-                            style = MaterialTheme.typography.headlineMedium.copy(
-                                fontWeight = FontWeight.Bold,
-                                fontFamily = customFontFamily,
-                                fontSize = (userSettings.fontSizeSp + 4).sp
-                            ),
-                            color = customFontColor,
-                            textAlign = TextAlign.Start
-                        )
-
-                        Spacer(modifier = Modifier.height(16.dp))
-
-                        // Category Tag and Orientation Switcher Row
-                        val categoryTitle = when (story.category) {
-                            "NASRUDDIN" -> "داستان ملانصرالدین"
-                            "SHAHNAMEH" -> "داستان شاهنامه"
-                            "JOKE" -> "جک و لطیفه"
-                            "RIDDLE" -> "چیستان"
-                            "FACT" -> "دانستنی‌ها"
-                            else -> "متن"
-                        }
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(20.dp)
                         ) {
+                            // Category Tag
+                            val categoryTitle = when (story.category) {
+                                "EDUCATIONAL" -> "داستان آموزنده"
+                                "NASRUDDIN" -> "داستان ملانصرالدین"
+                                "SHAHNAMEH" -> "داستان شاهنامه"
+                                "JOKE" -> "جک و لطیفه"
+                                "RIDDLE" -> "چیستان"
+                                "FACT" -> "دانستنی‌ها"
+                                else -> "متن"
+                            }
                             Box(
                                 modifier = Modifier
                                     .clip(RoundedCornerShape(8.dp))
@@ -349,90 +309,111 @@ fun StoryDetailScreen(
                                 )
                             }
 
-                            OutlinedButton(
-                                onClick = {
-                                    isLandscape = !isLandscape
-                                    val msg = if (isLandscape) "حالت افقی فعال شد" else "حالت عمودی فعال شد"
-                                    Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
-                                },
-                                shape = RoundedCornerShape(10.dp),
-                                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 4.dp),
-                                modifier = Modifier
-                                    .height(34.dp)
-                                    .testTag("detail_orientation_chip")
-                            ) {
-                                Row(verticalAlignment = Alignment.CenterVertically) {
-                                    Icon(
-                                        imageVector = if (isLandscape) Icons.Default.StayCurrentLandscape else Icons.Default.StayCurrentPortrait,
-                                        contentDescription = null,
-                                        modifier = Modifier.size(16.dp)
-                                    )
-                                    Spacer(modifier = Modifier.width(6.dp))
-                                    Text(
-                                        text = if (isLandscape) "صفحه افقی" else "صفحه عمودی",
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.Medium
-                                    )
+                            Spacer(modifier = Modifier.height(14.dp))
+
+                            // Title
+                            Text(
+                                text = story.title,
+                                style = MaterialTheme.typography.headlineMedium.copy(
+                                    fontWeight = FontWeight.Bold,
+                                    fontFamily = customFontFamily,
+                                    fontSize = (userSettings.fontSizeSp + 4).sp
+                                ),
+                                color = customFontColor,
+                                textAlign = TextAlign.Start
+                            )
+
+                            Spacer(modifier = Modifier.height(16.dp))
+
+                            // Full Content Text
+                            Text(
+                                text = story.content,
+                                fontFamily = customFontFamily,
+                                fontSize = userSettings.fontSizeSp.sp,
+                                lineHeight = (userSettings.fontSizeSp * 1.6f).sp,
+                                color = customFontColor,
+                                textAlign = TextAlign.Start
+                            )
+
+                            // Riddle Answer Reveal Option
+                            if (story.category == "RIDDLE" && !story.answer.isNullOrEmpty()) {
+                                Spacer(modifier = Modifier.height(20.dp))
+
+                                Button(
+                                    onClick = { showAnswer = !showAnswer },
+                                    colors = ButtonDefaults.buttonColors(
+                                        containerColor = Color(0xFFD97706),
+                                        contentColor = Color.White
+                                    ),
+                                    shape = RoundedCornerShape(12.dp),
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Icon(
+                                            imageVector = Icons.Default.Lightbulb,
+                                            contentDescription = "پاسخ",
+                                            modifier = Modifier.size(18.dp)
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                        Text(
+                                            text = if (showAnswer) "مخفی کردن پاسخ" else "مشاهده پاسخ چیستان",
+                                            fontWeight = FontWeight.Bold
+                                        )
+                                    }
+                                }
+
+                                AnimatedVisibility(
+                                    visible = showAnswer,
+                                    enter = fadeIn() + slideInVertically()
+                                ) {
+                                    Box(
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .padding(top = 12.dp)
+                                            .clip(RoundedCornerShape(12.dp))
+                                            .background(Color(0xFFFEF3C7))
+                                            .padding(16.dp)
+                                    ) {
+                                        Text(
+                                            text = "پاسخ: ${story.answer}",
+                                            fontWeight = FontWeight.Bold,
+                                            fontSize = (userSettings.fontSizeSp + 1).sp,
+                                            color = Color(0xFF92400E)
+                                        )
+                                    }
                                 }
                             }
-                        }
 
-                        Spacer(modifier = Modifier.height(20.dp))
-
-                        // Full Content Text
-                        Text(
-                            text = story.content,
-                            fontFamily = customFontFamily,
-                            fontSize = userSettings.fontSizeSp.sp,
-                            lineHeight = (userSettings.fontSizeSp * 1.6f).sp,
-                            color = customFontColor,
-                            textAlign = TextAlign.Start
-                        )
-
-                        // Riddle Answer Reveal Option
-                        if (story.category == "RIDDLE" && !story.answer.isNullOrEmpty()) {
                             Spacer(modifier = Modifier.height(24.dp))
 
+                            // Copy Text Button INSIDE the text card (داخل کادر نوشته)
                             Button(
-                                onClick = { showAnswer = !showAnswer },
+                                onClick = {
+                                    copyToClipboard(context, story.title, story.content)
+                                },
                                 colors = ButtonDefaults.buttonColors(
-                                    containerColor = Color(0xFFD97706),
-                                    contentColor = Color.White
+                                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                                    contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                                 ),
-                                shape = RoundedCornerShape(12.dp),
-                                modifier = Modifier.fillMaxWidth()
+                                shape = RoundedCornerShape(14.dp),
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("detail_copy_text_inside_card")
                             ) {
-                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.Center
+                                ) {
                                     Icon(
-                                        imageVector = Icons.Default.Lightbulb,
-                                        contentDescription = "پاسخ",
+                                        imageVector = Icons.Default.ContentCopy,
+                                        contentDescription = "کپی متن",
                                         modifier = Modifier.size(18.dp)
                                     )
                                     Spacer(modifier = Modifier.width(8.dp))
                                     Text(
-                                        text = if (showAnswer) "مخفی کردن پاسخ" else "مشاهده پاسخ چیستان",
-                                        fontWeight = FontWeight.Bold
-                                    )
-                                }
-                            }
-
-                            AnimatedVisibility(
-                                visible = showAnswer,
-                                enter = fadeIn() + slideInVertically()
-                            ) {
-                                Box(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(top = 12.dp)
-                                        .clip(RoundedCornerShape(12.dp))
-                                        .background(Color(0xFFFEF3C7))
-                                        .padding(16.dp)
-                                ) {
-                                    Text(
-                                        text = "پاسخ: ${story.answer}",
+                                        text = "کپی متن",
                                         fontWeight = FontWeight.Bold,
-                                        fontSize = (userSettings.fontSizeSp + 1).sp,
-                                        color = Color(0xFF92400E)
+                                        fontSize = 14.sp
                                     )
                                 }
                             }
@@ -443,13 +424,12 @@ fun StoryDetailScreen(
         }
     }
 }
-}
 
 private fun shareText(context: Context, title: String, content: String) {
     val shareIntent = Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
         putExtra(Intent.EXTRA_SUBJECT, title)
-        putExtra(Intent.EXTRA_TEXT, "$title\n\n$content\n\n- از برنامه جک و داستان ملانصرالدین")
+        putExtra(Intent.EXTRA_TEXT, "$title\n\n$content\n\n- از برنامه دنیای سرگرمی")
     }
     context.startActivity(Intent.createChooser(shareIntent, "اشتراک‌گذاری در شبکه های اجتماعی"))
 }
@@ -459,13 +439,4 @@ private fun copyToClipboard(context: Context, title: String, content: String) {
     val clip = ClipData.newPlainText("Story", "$title\n\n$content")
     clipboard.setPrimaryClip(clip)
     Toast.makeText(context, "متن در حافظه کپی شد", Toast.LENGTH_SHORT).show()
-}
-
-private fun Context.findActivity(): Activity? {
-    var ctx = this
-    while (ctx is ContextWrapper) {
-        if (ctx is Activity) return ctx
-        ctx = ctx.baseContext
-    }
-    return null
 }
